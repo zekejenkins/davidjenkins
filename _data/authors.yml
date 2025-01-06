@@ -2,17 +2,17 @@
 
 Name Name:
   name        : "David Jenkins"
-  uri         : "http://name.com"
+  # uri         : "http://name.com"
   email       : "jenkins.david34@icloud.com"
-  bio         : "David"
-  avatar      : "bio-photo-2.jpg"
-  twitter     : "name"
-  google_plus : "Name"
+  bio         : "Data-Driven Bilingual Professional"
+  avatar      : "1729996945115.jpeg"
+  # twitter     : "name"
+  # google_plus : "Name"
 
 Name2 Name2:
   name        : "David Jenkins"
   email       : "jenkins.daivd34@icloud.com"
-  bio         : "I am a data-driven bilingual professional..."
-  avatar      : "profile.png"
+  bio         : "Data-driven bilingual professional..."
+  avatar      : "1729996945115.jpeg"
   twitter     : "name2"
   google_plus : "Name"
