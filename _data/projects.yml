@@ -15,11 +15,11 @@
     - JavaScript
     - HTML
     - CSS
-  url: "/web-data-viz/"
+  url: "/davidjenkins/projects/web-data-viz/"
 
 - title: "Keyboard Shortcuts Automation"
   description: "Custom AutoHotkey scripts to optimize workflows."
   skills:
     - AutoHotkey
     - Excel
-  url: "/keyboard-shortcuts-automation/"
+  url: "/davidjenkins/projects/keyboard-shortcuts-automation/"
