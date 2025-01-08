@@ -5,28 +5,36 @@
 }
 
 .tile {
-  text-align: center;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px; /* Rounded corners */
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tile:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tile img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  display: block;
+}
+
+.tile-content {
+  padding: 15px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .tile h3 {
-  margin: 10px 0;
+  margin: 10px 0 5px;
   font-size: 1.25rem;
+  color: #333;
 }
 
 .tile p {
   font-size: 1rem;
-  color: #555;
+  color: #666;
 }
