@@ -12,8 +12,8 @@ title                    : "David Jenkins"
 title_separator          : "-"
 name                     : &name "David Jenkins"
 description              : &description "Data-drive bilingual professional..."
-url                      : https://zekejenkins.github.io/davidjenkins/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "/davidjenkins" # the subpath of your site, e.g. "/blog"
+url                      : https://davidjenkins.github.io/ # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zekejenkins/davidjenkins.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
