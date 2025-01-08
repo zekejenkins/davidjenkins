@@ -4,8 +4,6 @@ title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 ---
-
-
 <div class="portfolio-grid">
   {% for project in site.data.projects %}
   <div class="tile">
@@ -19,4 +17,3 @@ author_profile: true
   </div>
   {% endfor %}
 </div>
-
