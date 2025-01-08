@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: single
 title: Skills
-autho_profile: true
+author_profile: true
 permalink: /skills/
 ---
 
