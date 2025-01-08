@@ -9,6 +9,9 @@ main:
     url: resume/
 
   - title: "Portfolio"
-    url: portfolio/    
+    url: portfolio/  
+
+  - title: "Skills"
+    url: skills/  
 
  
