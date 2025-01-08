@@ -5,7 +5,6 @@ permalink: /projects/automated-report-generator/
 author_profile: true
 ---
 
-
 ## Overview
 
 The Automated Report Generator simplifies the process of generating complex reports by automating tasks using Python, Excel, AutoHotkey, and SQL.
@@ -30,8 +29,14 @@ The Automated Report Generator simplifies the process of generating complex repo
 
 [View on GitHub](https://github.com/zekejenkins/automated-report-generator)
 
-## Embedded Skills File
+## Skills File Content
 
-<pre class="language-yaml"><code>
-{% include skills.yml %}
-</code></pre>
+```yaml
+{% for skill in site.data.skills %}
+- Skill: {{ skill.skill }}
+  Icons:
+    Small: {{ skill.icons.small }}
+    Medium: {{ skill.icons.medium }}
+    Large: {{ skill.icons.large }}
+  URL: {{ skill.url }}
+{% endfor %}
