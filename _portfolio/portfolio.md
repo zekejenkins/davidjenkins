@@ -2,7 +2,11 @@
 layout: page
 title: Portfolio
 permalink: /portfolio/
+author_profile: true
+sidebar:
+  nav: "portfolio"
 ---
+
 
 <div class="portfolio-grid">
   {% for project in site.data.projects %}
