@@ -28,3 +28,21 @@ The Automated Report Generator simplifies the process of generating complex repo
 ## GitHub Repository
 
 [View on GitHub](https://github.com/zekejenkins/automated-report-generator)
+
+## Embedded Skills File
+
+<div id="skills-file-content" style="background: #f8f8f8; padding: 10px; border: 1px solid #ddd; font-family: monospace; white-space: pre-wrap; overflow-x: auto;">
+  Loading file content...
+</div>
+
+<script>
+  fetch("https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_data/skills.yml")
+    .then(response => response.text())
+    .then(text => {
+      document.getElementById("skills-file-content").textContent = text;
+    })
+    .catch(error => {
+      document.getElementById("skills-file-content").textContent = "Error loading file content.";
+      console.error(error);
+    });
+</script>
