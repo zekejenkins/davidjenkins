@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Python Projects"
-permalink: /skills/python/
+permalink: skills/python/
 ---
 
 ## Python Projects
