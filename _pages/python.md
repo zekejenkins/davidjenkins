@@ -2,6 +2,7 @@
 layout: page
 title: "Python Projects"
 permalink: /skills/python/
+author_profile: true
 ---
 
 ## Python Projects
