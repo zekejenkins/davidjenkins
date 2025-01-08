@@ -1,14 +1,21 @@
 ---
 layout: single
 title: Skills
-author_profile: true
 permalink: /skills/
+author_profile: true
+sidebar:
+  nav: "main"
 ---
+
 <div class="skills-grid">
   {% for skill in site.data.skills %}
   <div class="tile">
     <a href="{{ skill.url }}">
-      <img src="{{ skill.icon }}" alt="{{ skill.skill }}">
+      <picture>
+        <source srcset="{{ skill.icons.large }}" media="(min-width: 1200px)">
+        <source srcset="{{ skill.icons.medium }}" media="(min-width: 768px)">
+        <img src="{{ skill.icons.small }}" alt="{{ skill.skill }}">
+      </picture>
       <h3>{{ skill.skill }}</h3>
     </a>
   </div>
