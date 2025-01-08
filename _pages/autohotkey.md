@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Autohotkey Projects"
 permalink: /skills/autohotkey/
 author_profile: true
