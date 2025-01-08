@@ -39,3 +39,10 @@
     medium: "https://img.icons8.com/ios-filled/100/microsoft-excel-2019.png"
     large: "https://img.icons8.com/ios-filled/150/microsoft-excel-2019.png"
   url: "/skills/excel/"
+
+  - skill: "SQL"
+  icons:
+    small: "https://img.icons8.com/ios/50/sql.png"
+    medium: "https://img.icons8.com/ios/100/sql.png"
+    large: "https://img.icons8.com/ios/150/sql.png"
+  url: "/skills/sql/"
