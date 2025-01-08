@@ -1,13 +1,26 @@
 ---
 layout: page
-title: "AutoHotkey Projects"
+title: "Autohotkey Projects"
 permalink: /skills/autohotkey/
-author_page: true
+author_profile: true
 ---
 
-## AutoHotkey Projects
+## autohotkey Projects
 
-Here are some projects where I used AutoHotkey to automate repetitive tasks:
+Here are the projects where I used autohotkey:
 
-1. **[Project 1](https://github.com/zekejenkins/ahk-scripts)**: Custom keyboard shortcuts for workflow optimization.
-2. **[Project 2](https://github.com/zekejenkins/ahk-tool)**: A GUI-based automation tool built with AHK.
+<section class="project-list">
+  {% for project in site.data.projects %}
+    {% if project.skills contains "autohotkey" %}
+      <article class="project-item">
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p>{{ project.description }}</p>
+        <p><strong>Skills:</strong> 
+          {% for skill in project.skills %}
+            <a href="/skills/{{ skill | downcase }}/">{{ skill }}</a>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </p>
+      </article>
+    {% endif %}
+  {% endfor %}
+</section>
