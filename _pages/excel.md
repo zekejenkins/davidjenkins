@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Excel Projects"
 permalink: /skills/excel/
 author_profile: true
