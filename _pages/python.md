@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: single
 title: "Python Projects"
 permalink: /skills/python/
 author_profile: true
