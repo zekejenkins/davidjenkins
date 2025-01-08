@@ -1,9 +1,8 @@
 ---
 layout: single
-title: Skills
+title: "Skills"
 permalink: /skills/
 author_profile: true
-
 ---
 
 <div class="skills-grid">
@@ -20,3 +19,4 @@ author_profile: true
   </div>
   {% endfor %}
 </div>
+
