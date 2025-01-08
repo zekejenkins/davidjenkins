@@ -3,7 +3,7 @@
     small: "https://img.icons8.com/ios/50/python--v1.png"
     medium: "https://img.icons8.com/ios/100/python--v1.png"
     large: "https://img.icons8.com/ios/150/python--v1.png"
-  url: "skills/python/"
+  url: "/skills/python/"
 
 - skill: "AutoHotkey"
   icons:
