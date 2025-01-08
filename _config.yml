@@ -225,6 +225,22 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /projects/:name/
 
 # These settings control how pages and collections are included in the site
 defaults:
