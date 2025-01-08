@@ -28,3 +28,13 @@ The Automated Report Generator simplifies the process of generating complex repo
 ## GitHub Repository
 
 [View on GitHub](https://github.com/zekejenkins/automated-report-generator)
+
+## Embedded Skills File
+
+You can view the contents of the `skills.yml` file below:
+
+```yaml
+{% capture skills_file %}
+{% include_relative /_data/skills.yml %}
+{% endcapture %}
+{{ skills_file | markdownify }}
