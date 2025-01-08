@@ -11,7 +11,7 @@ Here are the projects where I used javascript:
 
 <div class="skills-grid">
   {% for project in site.data.projects %}
-    {% if project.skills contains "javascript" %}
+    {% if project.skills contains "JavaScript" %}
       <div class="tile">
         <a href="{{ project.url }}">
           <h3>{{ project.title }}</h3>
