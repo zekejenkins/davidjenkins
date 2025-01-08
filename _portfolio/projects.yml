@@ -1,0 +1,21 @@
+- title: "Automated Report Generator"
+  description: "Automates report generation using Python and Excel."
+  skills:
+    - Python
+    - Excel
+    - AutoHotkey
+  url: "https://github.com/zekejenkins/automated-report-generator"
+
+- title: "Web App for Data Visualization"
+  description: "A web-based tool for visualizing data using JavaScript and HTML/CSS."
+  skills:
+    - JavaScript
+    - HTML
+    - CSS
+  url: "https://github.com/zekejenkins/web-data-viz"
+
+- title: "Keyboard Shortcuts Automation"
+  description: "Custom AutoHotkey scripts to optimize workflows."
+  skills:
+    - AutoHotkey
+  url: "https://github.com/zekejenkins/keyboard-shortcuts-automation"
