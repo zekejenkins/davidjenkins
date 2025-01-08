@@ -7,7 +7,7 @@
     - SQL
     - HTML
     - JavaScript
-  url: "https://github.com/zekejenkins/automated-report-generator"
+  url: "/projects/automated-report-generator/"
 
 - title: "Web App for Data Visualization"
   description: "A web-based tool for visualizing data using JavaScript and HTML/CSS."
@@ -15,11 +15,11 @@
     - JavaScript
     - HTML
     - CSS
-  url: "https://github.com/zekejenkins/web-data-viz"
+  url: "/web-data-viz/"
 
 - title: "Keyboard Shortcuts Automation"
   description: "Custom AutoHotkey scripts to optimize workflows."
   skills:
     - AutoHotkey
     - Excel
-  url: "https://github.com/zekejenkins/keyboard-shortcuts-automation"
+  url: "/keyboard-shortcuts-automation/"
