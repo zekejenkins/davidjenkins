@@ -28,10 +28,3 @@ The Automated Report Generator simplifies the process of generating complex repo
 ## GitHub Repository
 
 [View on GitHub](https://github.com/zekejenkins/automated-report-generator)
-
-## Embedded Skills File
-
-You can view the `skills.yml` file content below:
-
-<iframe src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_data/skills.yml" style="width:100%; height:400px; border:none;">
-</iframe>
