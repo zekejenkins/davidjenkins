@@ -38,7 +38,7 @@ The Automated Report Generator simplifies the process of generating complex repo
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
 <script>
-  fetch("https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_data/skills.yml")
+  fetch("https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_projects/automated-report-generator.md")
     .then(response => response.text())
     .then(text => {
       document.getElementById("skills-file-content").innerHTML = 
