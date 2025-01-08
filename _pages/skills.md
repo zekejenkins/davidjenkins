@@ -3,8 +3,7 @@ layout: single
 title: Skills
 permalink: /skills/
 author_profile: true
-sidebar:
-  nav: "main"
+
 ---
 
 <div class="skills-grid">
