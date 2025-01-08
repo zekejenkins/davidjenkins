@@ -1,14 +1,41 @@
 - skill: "Python"
-  description: "Projects using Python for data analysis and automation."
+  icons:
+    small: "https://img.icons8.com/ios/50/python--v1.png"
+    medium: "https://img.icons8.com/ios/100/python--v1.png"
+    large: "https://img.icons8.com/ios/150/python--v1.png"
   url: "/skills/python/"
-  image: "/assets/images/python-tile.jpg"
 
-- skill: "SQL"
-  description: "Projects involving complex SQL queries and databases."
-  url: "/skills/sql/"
-  image: "/assets/images/sql-tile.jpg"
+- skill: "AutoHotkey"
+  icons:
+    small: "https://img.icons8.com/fluency-systems-regular/48/autohotkey.png"
+    medium: "https://img.icons8.com/fluency-systems-regular/96/autohotkey.png"
+    large: "https://img.icons8.com/fluency-systems-regular/144/autohotkey.png"
+  url: "/skills/autohotkey/"
 
-- skill: "Data Visualization"
-  description: "Projects focused on data visualization and storytelling."
-  url: "/skills/data-visualization/"
-  image: "/assets/images/data-viz-tile.jpg"
+- skill: "JavaScript"
+  icons:
+    small: "https://img.icons8.com/ios/50/javascript--v1.png"
+    medium: "https://img.icons8.com/ios/100/javascript--v1.png"
+    large: "https://img.icons8.com/ios/150/javascript--v1.png"
+  url: "/skills/javascript/"
+
+- skill: "HTML"
+  icons:
+    small: "https://img.icons8.com/ios/50/html.png"
+    medium: "https://img.icons8.com/ios/100/html.png"
+    large: "https://img.icons8.com/ios/150/html.png"
+  url: "/skills/html/"
+
+- skill: "CSS"
+  icons:
+    small: "https://img.icons8.com/ios/50/css.png"
+    medium: "https://img.icons8.com/ios/100/css.png"
+    large: "https://img.icons8.com/ios/150/css.png"
+  url: "/skills/css/"
+
+- skill: "Excel"
+  icons:
+    small: "https://img.icons8.com/ios-filled/50/microsoft-excel-2019.png"
+    medium: "https://img.icons8.com/ios-filled/100/microsoft-excel-2019.png"
+    large: "https://img.icons8.com/ios-filled/150/microsoft-excel-2019.png"
+  url: "/skills/excel/"
