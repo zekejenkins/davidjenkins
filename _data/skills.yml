@@ -46,3 +46,11 @@
     medium: "https://img.icons8.com/ios/100/sql.png"
     large: "https://img.icons8.com/ios/150/sql.png"
   url: "/skills/sql/"
+
+- skill: "Visualization"
+  icons:
+    small: "https://img.icons8.com/ios/50/doughnut-chart--v1.png"
+    medium: "https://img.icons8.com/ios/100/doughnut-chart--v1.png"
+    large: "https://img.icons8.com/ios/150/doughnut-chart--v1.png"
+  url: "/skills/visualization/"
+
