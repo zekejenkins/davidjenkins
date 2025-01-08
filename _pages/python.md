@@ -11,7 +11,7 @@ Here are the projects where I used Python:
 
 <div class="skills-grid">
   {% for project in site.data.projects %}
-    {% if project.skills contains "Excel" %}
+    {% if project.skills contains "Python" %}
       <div class="tile">
         <a href="{{ project.url }}">
           <h3>{{ project.title }}</h3>
