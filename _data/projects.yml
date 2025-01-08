@@ -7,7 +7,7 @@
     - SQL
     - HTML
     - JavaScript
-  url: "/projects/automated-report-generator/"
+  url: "/davidjenkins/projects/automated-report-generator/"
 
 - title: "Web App for Data Visualization"
   description: "A web-based tool for visualizing data using JavaScript and HTML/CSS."
