@@ -5,13 +5,13 @@ permalink: /skills/excel/
 author_profile: true
 ---
 
-## excel Projects
+## Excel Projects
 
-Here are the projects where I used excel:
+Here are the projects where I used Excel:
 
 <section class="project-list">
   {% for project in site.data.projects %}
-    {% if project.skills contains "excel" %}
+    {% if project.skills contains "Excel" %}
       <article class="project-item">
         <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
         <p>{{ project.description }}</p>
