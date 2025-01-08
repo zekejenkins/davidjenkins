@@ -1,0 +1,13 @@
+---
+layout: page
+title: "AutoHotkey Projects"
+permalink: /skills/autohotkey/
+author_page: true
+---
+
+## AutoHotkey Projects
+
+Here are some projects where I used AutoHotkey to automate repetitive tasks:
+
+1. **[Project 1](https://github.com/zekejenkins/ahk-scripts)**: Custom keyboard shortcuts for workflow optimization.
+2. **[Project 2](https://github.com/zekejenkins/ahk-tool)**: A GUI-based automation tool built with AHK.
