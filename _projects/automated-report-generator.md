@@ -31,10 +31,7 @@ The Automated Report Generator simplifies the process of generating complex repo
 
 ## Embedded Skills File
 
-You can view the contents of the `skills.yml` file below:
+You can view the `skills.yml` file content below:
 
-```yaml
-{% capture skills_file %}
-{% include_relative /_data/skills.yml %}
-{% endcapture %}
-{{ skills_file | markdownify }}
+<iframe src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_data/skills.yml" style="width:100%; height:400px; border:none;">
+</iframe>
