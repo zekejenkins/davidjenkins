@@ -1,0 +1,32 @@
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tile {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile img {
+  max-width: 100%;
+  height: auto;
+}
+
+.tile h3 {
+  margin: 10px 0;
+  font-size: 1.25rem;
+}
+
+.tile p {
+  font-size: 1rem;
+  color: #555;
+}
