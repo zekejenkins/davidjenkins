@@ -1,21 +1,25 @@
 ---
 layout: page
 title: "Python Projects"
-permalink: skills/python/
+permalink: /skills/python/
 ---
 
 ## Python Projects
 
 Here are the projects where I used Python:
 
-<div class="project-list">
+<section class="project-list">
   {% for project in site.data.projects %}
     {% if project.skills contains "Python" %}
-      <div class="project-item">
+      <article class="project-item">
         <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
         <p>{{ project.description }}</p>
-        <p><strong>Skills:</strong> {{ project.skills | join: ", " }}</p>
-      </div>
+        <p><strong>Skills:</strong> 
+          {% for skill in project.skills %}
+            <a href="/skills/{{ skill | downcase }}/">{{ skill }}</a>{% if forloop.last == false %}, {% endif %}
+          {% endfor %}
+        </p>
+      </article>
     {% endif %}
   {% endfor %}
-</div>
+</section>
