@@ -1,11 +1,12 @@
 ---
-layout: page
-title: Portfolio
+layout: single
+title: "Portfolio"
 permalink: /portfolio/
 author_profile: true
 sidebar:
-  nav: "portfolio"
+  nav: "main"
 ---
+
 
 <div class="portfolio-grid">
   {% for project in site.data.projects %}
