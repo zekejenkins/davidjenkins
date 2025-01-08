@@ -5,7 +5,7 @@ permalink: /skills/javascript/
 author_profile: true
 ---
 
-## Javascript Projects
+## JavaScript Projects
 
 Here are the projects where I used javascript:
 
