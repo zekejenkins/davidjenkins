@@ -40,13 +40,30 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-/* Skills Grid */
+---
+---
+
+/* Base Styles for Skills Grid */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
   gap: 20px;
   padding: 20px;
-  margin-left: 250px; /* Adjust this value to match your sidebar width */
+  margin: 0 auto; /* Center the grid horizontally */
+  max-width: 1200px; /* Optional: Limit the grid's width */
+  justify-content: center; /* Center grid items */
+}
+
+/* Sidebar Compatibility */
+.skills-grid {
+  margin-left: 250px; /* Adjust for sidebar */
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    margin-left: 0; /* Remove sidebar offset on smaller screens */
+    padding: 10px; /* Reduce padding for mobile */
+  }
 }
 
 /* Tile Styling */
@@ -91,11 +108,19 @@
   color: white;
   text-decoration: underline;
 }
+
+/* Responsive Project List */
 .project-list {
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .project-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 .project-item {
@@ -120,4 +145,3 @@
   font-size: 1rem;
   color: #555;
 }
-
