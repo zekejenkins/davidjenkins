@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "SQL Projects"
-permalink: /skills/SQL/
+permalink: /skills/sql/
 author_profile: true
 ---
 
