@@ -1,0 +1,14 @@
+- skill: "Python"
+  description: "Projects using Python for data analysis and automation."
+  url: "/skills/python/"
+  image: "/assets/images/python-tile.jpg"
+
+- skill: "SQL"
+  description: "Projects involving complex SQL queries and databases."
+  url: "/skills/sql/"
+  image: "/assets/images/sql-tile.jpg"
+
+- skill: "Data Visualization"
+  description: "Projects focused on data visualization and storytelling."
+  url: "/skills/data-visualization/"
+  image: "/assets/images/data-viz-tile.jpg"
