@@ -9,11 +9,12 @@ permalink: /skills/
   {% for skill in site.data.skills %}
   <div class="tile">
     <a href="{{ skill.url }}">
-      <img src="{{ skill.image }}" alt="{{ skill.skill }}">
-      <div class="tile-content">
-        <h3>{{ skill.skill }}</h3>
-        <p>{{ skill.description }}</p>
-      </div>
+      <picture>
+        <source srcset="{{ skill.icons.large }}" media="(min-width: 1200px)">
+        <source srcset="{{ skill.icons.medium }}" media="(min-width: 768px)">
+        <img src="{{ skill.icons.small }}" alt="{{ skill.skill }}">
+      </picture>
+      <h3>{{ skill.skill }}</h3>
     </a>
   </div>
   {% endfor %}
