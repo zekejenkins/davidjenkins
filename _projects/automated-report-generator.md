@@ -5,6 +5,7 @@ permalink: /projects/automated-report-generator/
 author_profile: true
 ---
 
+
 ## Overview
 
 The Automated Report Generator simplifies the process of generating complex reports by automating tasks using Python, Excel, AutoHotkey, and SQL.
