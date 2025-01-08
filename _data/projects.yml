@@ -1,0 +1,9 @@
+- title: "Project 1"
+  description: "A brief description of Project 1."
+  url: "https://github.com/zekejenkins/project1"
+  image: "/assets/images/project1-thumbnail.jpg"
+
+- title: "Project 2"
+  description: "A brief description of Project 2."
+  url: "https://github.com/zekejenkins/project2"
+  image: "/assets/images/project2-thumbnail.jpg"
