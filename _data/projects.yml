@@ -29,3 +29,10 @@
     - AutoHotkey
     - Excel
   url: "/davidjenkins/projects/keyboard-shortcuts-automation/"
+
+  - title: "Data Gathering"
+  description: "Custom AutoHotkey scripts to gather data."
+  skills:
+    - AutoHotkey
+    - SQL
+  url: "/davidjenkins/projects/data_gathering/"
