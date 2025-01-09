@@ -145,6 +145,7 @@ body {
     background-color: black;
     color: white;
     border: 1px solid #333;
+    transition: all 0.3s ease;
   }
 
   .tile:hover {
@@ -155,11 +156,12 @@ body {
   }
 
   .tile img {
-    filter: brightness(1);
+    filter: invert(1); /* Invert icon colors for dark mode */
+    transition: filter 0.3s ease;
   }
 
   .tile:hover img {
-    filter: brightness(0) invert(1); /* Turns the icon to black for better visibility */
+    filter: invert(0); /* Restore original colors on hover */
   }
 
   .header,
@@ -192,6 +194,7 @@ body.dark-theme .tile {
   background-color: black;
   color: white;
   border: 1px solid #333;
+  transition: all 0.3s ease;
 }
 
 body.dark-theme .tile:hover {
@@ -200,11 +203,11 @@ body.dark-theme .tile:hover {
 }
 
 body.dark-theme .tile img {
-  filter: brightness(1);
+  filter: invert(1); /* Ensure inversion for dark mode */
 }
 
 body.dark-theme .tile:hover img {
-  filter: brightness(0) invert(1);
+  filter: invert(0); /* Revert inversion on hover */
 }
 
 body.dark-theme .header,
