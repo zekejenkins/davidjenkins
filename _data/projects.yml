@@ -9,6 +9,12 @@
     - JavaScript
   url: "/davidjenkins/projects/automated-report-generator/"
 
+- title: "ERP Data Entry"
+  description: "A Data Entry Program"
+  skills:
+    - AutoHotKey
+  url: "/davidjenkins/projects/erp_data_entry/"
+  
 - title: "Web App for Data Visualization"
   description: "A web-based tool for visualizing data using JavaScript and HTML/CSS."
   skills:
