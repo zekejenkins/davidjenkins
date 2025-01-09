@@ -180,12 +180,12 @@ body {
 
 /* Dark Theme Class Override */
 body.dark-theme {
-  background-color: #121212;
-  color: #e5e5e5;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 body.dark-theme .skills-grid {
-  background-color: #1e1e1e;
+  background-color: #000000;
 }
 
 body.dark-theme .tile {
@@ -204,7 +204,7 @@ body.dark-theme .tile img {
 }
 
 body.dark-theme .tile:hover img {
-  filter: brightness(0) invert(0);
+  filter: brightness(0) invert(1);
 }
 
 body.dark-theme .header,
