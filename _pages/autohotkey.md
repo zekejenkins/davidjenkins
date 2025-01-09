@@ -11,7 +11,7 @@ Here are the projects where I used autohotkey:
 
 <section class="project-list">
   {% for project in site.data.projects %}
-    {% if project.skills contains "autohotkey" %}
+    {% if project.skills contains "AutoHotkey" %}
       <article class="project-item">
         <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
         <p>{{ project.description }}</p>
