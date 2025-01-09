@@ -120,3 +120,41 @@
   font-size: 1rem;
   color: #555;
 }
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#toggle {
+  display: none; /* Hide the checkbox but use it for logic */
+}
+
+#toggle + label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#light-icon {
+  display: none; /* Default: show dark mode icon */
+}
+
+body.dark-theme #dark-icon {
+  display: none; /* Hide dark mode icon in dark theme */
+}
+
+body.dark-theme #light-icon {
+  display: inline; /* Show light mode icon in dark theme */
+}
+
+.dark-theme {
+  background-color: #121212; /* Use a dark grey instead of black */
+  color: #e5e5e5;
+}
