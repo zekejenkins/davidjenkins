@@ -12,7 +12,7 @@
 - title: "ERP Data Entry"
   description: "A Data Entry Program"
   skills:
-    - AutoHotKey
+    - AutoHotkey
   url: "/davidjenkins/projects/erp_data_entry/"
   
 - title: "Web App for Data Visualization"
