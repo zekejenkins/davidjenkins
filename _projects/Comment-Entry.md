@@ -38,7 +38,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #SingleInstance, Force ; Forces a single instance of the script to run at all times.
 #Include R:\HotKey Repository\Functions\Clipboard_Functions.ahk
 #Include R:\HotKey Repository\Functions\Activate_Window_Functions.ahk
-#Include R:\HotKey Repository\Banner 9\Aid Period Set-up\Functions\Aid_Period_Setup_Functions.ahk
 
 ;~ Super Global Variables
 ;~ ;---------------------
