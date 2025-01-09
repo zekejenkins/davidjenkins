@@ -54,3 +54,10 @@
     large: "https://img.icons8.com/ios/150/doughnut-chart--v1.png"
   url: "/skills/visualization/"
 
+- skill: "API"
+  icons:
+    small: "https://img.icons8.com/ios/50/api.png"
+    medium: "https://img.icons8.com/ios/100/api.png"
+    large: "https://img.icons8.com/ios/150/api.png"
+  url: "/skills/api/"
+
