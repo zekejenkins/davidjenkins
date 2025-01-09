@@ -34,3 +34,31 @@ The system provided a centralized method for logging clipboard activity across m
 - Microsoft Access
 - SQL for database interactions
 - Windows Clipboard Monitoring
+
+## GitHub Repository
+
+[View on GitHub](https://github.com/zekejenkins/data-gathering)
+
+---
+
+## Embedded Skills File
+
+<div id="skills-file-content" style="background: #f8f8f8; padding: 10px; border: 1px solid #ddd; font-family: monospace; white-space: pre-wrap; font-size: 0.875rem; overflow-x: auto;">
+  Loading file content...
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
+<script>
+  fetch("https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_projects/data_gathering.md")
+    .then(response => response.text())
+    .then(text => {
+      document.getElementById("skills-file-content").innerHTML = 
+        `<pre><code class="yaml">${text}</code></pre>`;
+      hljs.highlightAll();
+    })
+    .catch(error => {
+      document.getElementById("skills-file-content").textContent = "Error loading file content.";
+      console.error(error);
+    });
+</script>
