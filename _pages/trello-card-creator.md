@@ -9,10 +9,13 @@ author_profile: true
 
 This project automates the creation of Trello cards using data from a Google Sheet. Leveraging Google Apps Script and the Trello API, the script reads spreadsheet rows and maps them to Trello lists, ensuring seamless task management for teams.
 
+The idea for this project came from my desire to improve my office's project management practices. Previously, all project management was handled using spreadsheets, which made tracking and updating tasks cumbersome. I introduced the Kanban-style project management of Trello and created this JavaScript-based API integration to transition all spreadsheet-based tasks into Trello. This script automated the migration and made the transition much smoother for the team.
+
 By implementing this solution, I was able to:
 - Automate card creation in Trello based on structured data.
 - Dynamically match spreadsheet rows to corresponding Trello lists.
 - Streamline project management by reducing manual work.
+- Help my office adopt a modern and efficient project management tool.
 
 ---
 
@@ -22,6 +25,7 @@ By implementing this solution, I was able to:
 - **Trello API Integration**: Dynamically fetches Trello lists and creates cards in the appropriate list.
 - **Error Handling**: Logs errors for unmatched lists or API issues for debugging and troubleshooting.
 - **Reusable Script**: Configurable to work with different boards or sheet structures.
+- **Automated Transition**: Simplifies the migration from spreadsheets to Trello, making it easier for teams to adopt new workflows.
 
 ---
 
@@ -61,3 +65,8 @@ By implementing this solution, I was able to:
     });
 </script>
 
+---
+
+## Impact
+
+This project not only automated a labor-intensive process but also served as a catalyst for modernizing our office's project management practices. By transitioning to Trello and automating the migration process, I facilitated a smoother adoption of a more efficient, visual, and collaborative project management system. This initiative improved task tracking and empowered team members to manage their workflows more effectively.
