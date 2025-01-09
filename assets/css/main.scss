@@ -120,41 +120,31 @@
   font-size: 1rem;
   color: #555;
 }
+/* Default Light Mode */
 body {
+  background-color: #ffffff;
+  color: #000000;
   transition: background-color 0.3s, color 0.3s;
 }
 
-.container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
+/* Dark Mode Based on System Settings */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e5e5e5;
+  }
+
+  #light-icon {
+    display: inline; /* Show light icon for switching back to light mode */
+  }
+
+  #dark-icon {
+    display: none; /* Hide dark icon in dark mode */
+  }
 }
 
-#toggle {
-  display: none; /* Hide the checkbox but use it for logic */
-}
-
-#toggle + label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
-#light-icon {
-  display: none; /* Default: show dark mode icon */
-}
-
-body.dark-theme #dark-icon {
-  display: none; /* Hide dark mode icon in dark theme */
-}
-
-body.dark-theme #light-icon {
-  display: inline; /* Show light mode icon in dark theme */
-}
-
-.dark-theme {
-  background-color: #121212; /* Use a dark grey instead of black */
+/* Dark Theme Class Override */
+body.dark-theme {
+  background-color: #121212;
   color: #e5e5e5;
 }
