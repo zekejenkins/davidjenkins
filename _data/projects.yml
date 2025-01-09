@@ -1,13 +1,10 @@
-- title: "Automated Report Generator"
-  description: "Automates report generation using Python and Excel."
+- title: "Trello Card Creator"
+  description: "A Google Apps Script project to automate creating Trello cards from spreadsheet data."
   skills:
-    - Python
-    - Excel
-    - AutoHotkey
-    - SQL
-    - HTML
     - JavaScript
-  url: "/davidjenkins/projects/automated-report-generator/"
+    - Google Apps Script
+    - API
+  url: "/davidjenkins/projects/trello_card_creator/"
 
 - title: "ERP Data Entry"
   description: "A Data Entry Program"
