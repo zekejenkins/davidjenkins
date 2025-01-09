@@ -120,6 +120,7 @@
   font-size: 1rem;
   color: #555;
 }
+
 /* Default Light Mode */
 body {
   background-color: #ffffff;
@@ -132,6 +133,32 @@ body {
   body {
     background-color: #121212;
     color: #e5e5e5;
+  }
+
+  .skills-grid {
+    background-color: #1e1e1e;
+  }
+
+  .tile {
+    background-color: #1e1e1e;
+    color: #e5e5e5;
+    border: 1px solid #333;
+  }
+
+  .tile:hover {
+    background-color: #333;
+    color: #ffffff;
+  }
+
+  .tile img {
+    filter: brightness(0.7);
+  }
+
+  .header,
+  .footer {
+    background-color: #1e1e1e;
+    color: #e5e5e5;
+    border-top: 1px solid #333;
   }
 
   #light-icon {
@@ -147,4 +174,30 @@ body {
 body.dark-theme {
   background-color: #121212;
   color: #e5e5e5;
+}
+
+body.dark-theme .skills-grid {
+  background-color: #1e1e1e;
+}
+
+body.dark-theme .tile {
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+  border: 1px solid #333;
+}
+
+body.dark-theme .tile:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+body.dark-theme .tile img {
+  filter: brightness(0.7);
+}
+
+body.dark-theme .header,
+body.dark-theme .footer {
+  background-color: #1e1e1e;
+  color: #e5e5e5;
+  border-top: 1px solid #333;
 }
