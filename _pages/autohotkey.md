@@ -5,7 +5,7 @@ permalink: /skills/autohotkey/
 author_profile: true
 ---
 
-## JavaScript Projects
+## AutoHotkey Projects
 
 Here are the projects where I used AutoHotkey:
 
