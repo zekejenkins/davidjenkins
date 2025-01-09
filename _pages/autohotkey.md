@@ -5,9 +5,9 @@ permalink: /skills/autohotkey/
 author_profile: true
 ---
 
-## AutoHotkey Projects
+## JavaScript Projects
 
-Here are the projects where I used Python:
+Here are the projects where I used AutoHotkey:
 
 <div class="skills-grid">
   {% for project in site.data.projects %}
