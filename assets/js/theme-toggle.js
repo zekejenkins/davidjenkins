@@ -1,26 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   const lightIcon = document.getElementById('light-icon');
   const darkIcon = document.getElementById('dark-icon');
-  const themeLabel = document.getElementById('theme-label');
 
   // Check for saved theme preference in localStorage
-  const currentTheme = localStorage.getItem('theme');
-  if (currentTheme === 'dark') {
-    document.body.classList.add('dark-mode');
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme)) {
+    document.body.classList.add('dark-theme');
     darkIcon.style.display = 'none';
     lightIcon.style.display = 'inline';
   } else {
-    document.body.classList.remove('dark-mode');
+    document.body.classList.remove('dark-theme');
     lightIcon.style.display = 'none';
     darkIcon.style.display = 'inline';
   }
 
-  // Add click event listener to the toggle
+  // Toggle theme on click
   document.getElementById('theme-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const isDarkMode = document.body.classList.contains('dark-mode');
+    document.body.classList.toggle('dark-theme');
+    const isDarkMode = document.body.classList.contains('dark-theme');
 
-    // Update icons and save preference
+    // Save the user's preference
     if (isDarkMode) {
       localStorage.setItem('theme', 'dark');
       lightIcon.style.display = 'inline';
@@ -32,4 +33,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
