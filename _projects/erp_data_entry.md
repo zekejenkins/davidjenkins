@@ -23,7 +23,7 @@ This project automates data entry for student comments in Ellucian Banner, reduc
 
 ## GitHub Repository
 
-[View on GitHub](https://github.com/zekejenkins/comment-entry)
+[View on GitHub](https://github.com/zekejenkins/Comment-Entry)
 
 ## Embedded Skills File
 
@@ -34,7 +34,7 @@ This project automates data entry for student comments in Ellucian Banner, reduc
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github.min.css">
 <script>
-  fetch("https://raw.githubusercontent.com/zekejenkins/comment-entry/master/_projects/comment-entry.md")
+  fetch("https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/_projects/Comment-Entry.md")
     .then(response => response.text())
     .then(text => {
       document.getElementById("skills-file-content").innerHTML = 
