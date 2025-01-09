@@ -56,3 +56,41 @@
     font-weight: 700;
   }
 }
+
+/* Dark Mode Based on System Settings */
+@media (prefers-color-scheme: dark) {
+  .masthead {
+    background: #1e1e1e; /* Dark background */
+    border-bottom: 1px solid #333; /* Subtle border for contrast */
+  }
+
+  .masthead__inner-wrap {
+    color: #e5e5e5; /* Light text for readability */
+  }
+
+  .masthead__menu-item a {
+    color: #e5e5e5; /* Light text for links */
+  }
+
+  .masthead__menu-item a:hover {
+    color: #ffffff; /* Slightly brighter text on hover */
+  }
+}
+
+/* Dark Theme Class Override */
+body.dark-theme .masthead {
+  background: #1e1e1e;
+  border-bottom: 1px solid #333;
+}
+
+body.dark-theme .masthead__inner-wrap {
+  color: #e5e5e5;
+}
+
+body.dark-theme .masthead__menu-item a {
+  color: #e5e5e5;
+}
+
+body.dark-theme .masthead__menu-item a:hover {
+  color: #ffffff;
+}
