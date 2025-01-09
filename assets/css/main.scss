@@ -58,12 +58,14 @@
   border-radius: 12px;
   padding: 15px;
   text-align: center;
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   background-color: white;
+  color: #333;
 }
 
 .tile:hover {
   background-color: black;
+  color: white;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -82,15 +84,15 @@
 /* Skill Title Styling */
 .tile h3 {
   font-size: 1.2rem;
-  color: #333;
+  color: inherit;
   text-decoration: none;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .tile:hover h3 {
-  color: white;
   text-decoration: underline;
 }
+
 .project-list {
   margin-top: 20px;
   display: grid;
@@ -140,18 +142,24 @@ body {
   }
 
   .tile {
-    background-color: #1e1e1e;
-    color: #e5e5e5;
+    background-color: black;
+    color: white;
     border: 1px solid #333;
   }
 
   .tile:hover {
-    background-color: #333;
-    color: #ffffff;
+    background-color: white;
+    color: black;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
   }
 
   .tile img {
-    filter: brightness(0.7);
+    filter: brightness(1);
+  }
+
+  .tile:hover img {
+    filter: brightness(0) invert(0); /* Turns the icon to black for better visibility */
   }
 
   .header,
@@ -181,18 +189,22 @@ body.dark-theme .skills-grid {
 }
 
 body.dark-theme .tile {
-  background-color: #1e1e1e;
-  color: #e5e5e5;
+  background-color: black;
+  color: white;
   border: 1px solid #333;
 }
 
 body.dark-theme .tile:hover {
-  background-color: #333;
-  color: #ffffff;
+  background-color: white;
+  color: black;
 }
 
 body.dark-theme .tile img {
-  filter: brightness(0.7);
+  filter: brightness(1);
+}
+
+body.dark-theme .tile:hover img {
+  filter: brightness(0) invert(0);
 }
 
 body.dark-theme .header,
