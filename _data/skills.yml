@@ -49,9 +49,9 @@
 
 - skill: "Visualization"
   icons:
-    small: "https://img.icons8.com/ios/50/doughnut-chart--v1.png"
-    medium: "https://img.icons8.com/ios/100/doughnut-chart--v1.png"
-    large: "https://img.icons8.com/ios/150/doughnut-chart--v1.png"
+    small: "https://img.icons8.com/ios/50/area-chart.png"
+    medium: "https://img.icons8.com/ios/100/area-chart.png"
+    large: "https://img.icons8.com/ios/150/area-chart.png"
   url: "/skills/visualization/"
 
 - skill: "API"
