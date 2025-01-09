@@ -32,11 +32,15 @@ By implementing this solution, I was able to:
 - Trello API
 - Google Sheets API
 
+---
+
 ## GitHub Repository
 
 [View on GitHub](https://github.com/zekejenkins/trello-card-creator)
 
 ---
+
+## Code Example
 <div id="skills-file-content" style="background: #f8f8f8; padding: 10px; border: 1px solid #ddd; font-family: monospace; white-space: pre-wrap; font-size: 0.875rem; overflow-x: auto;">
   Loading file content...
 </div>
@@ -57,4 +61,3 @@ By implementing this solution, I was able to:
     });
 </script>
 
-## Code Example
