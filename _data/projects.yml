@@ -30,7 +30,7 @@
     - Excel
   url: "/davidjenkins/projects/keyboard-shortcuts-automation/"
 
-  - title: "Data Gathering"
+- title: "Data Gathering"
   description: "Custom AutoHotkey scripts to gather data."
   skills:
     - AutoHotkey
