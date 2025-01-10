@@ -3,12 +3,13 @@
    ========================================================================== */
 
 table {
-  margin-bottom: 1em;
-  width: 100%;
+  margin: 1em auto; /* Center the table */
+  width: auto; /* Adjust table width automatically */
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
   border: 1px solid $light-gray;
+  text-align: center; /* Center-align text */
 
   & + table {
     margin-top: 1em;
@@ -23,7 +24,7 @@ thead {
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left;
+  text-align: center; /* Center-align header text */
   border-right: 1px solid $light-gray;
 }
 
@@ -35,4 +36,38 @@ td {
 
 tr, td, th {
   vertical-align: middle;
+}
+
+/* Light mode table styles */
+body {
+  table {
+    border: 1px solid black;
+    color: black;
+  }
+
+  thead {
+    background-color: #f9f9f9;
+  }
+
+  th, td {
+    border: 1px solid black;
+  }
+}
+
+/* Dark mode table styles */
+@media (prefers-color-scheme: dark) {
+  body {
+    table {
+      border: 1px solid white;
+      color: white;
+    }
+
+    thead {
+      background-color: #1e1e1e;
+    }
+
+    th, td {
+      border: 1px solid white;
+    }
+  }
 }
