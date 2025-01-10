@@ -245,33 +245,38 @@ body {
 /* Dark mode table styles */
 @media (prefers-color-scheme: dark) {
   table {
-    border: 1px solid black;
-    color: black;
-  }
+  margin: 1em 0 1em 0.5em; /* Add small left margin and spacing */
+  width: 100%; /* Use full width */
+  font-family: $global-font-family;
+  font-size: $type-size-6;
+  border-collapse: collapse; /* Ensure borders collapse */
+  text-align: left; /* Left-align content */
+  background-color: black; /* Set table background to black */
+  color: white; /* Set table text to white */
+  border: 1px solid white; /* Set table border to white */
+  transition: all 0.3s ease; /* Smooth transition for mode switching */
 
-  thead {
-    background-color: #1e1e1e;
-  }
-
-  th, td {
-    border: 1px solid black;
-  }
-}
-/* Default: No inversion */
-.invert-on-dark {
-  filter: none;
-}
-
-/* Dark Mode: Invert images */
-@media (prefers-color-scheme: dark) {
-  .invert-on-dark {
-    filter: invert(1) brightness(1.2);
+  & + table {
+    margin-top: 1em;
   }
 }
 
-/* Dark Theme Class Override */
-body.dark-theme .invert-on-dark {
-  filter: invert(1) brightness(1.2);
+thead {
+  background-color: black; /* Set header background to black */
+  border-bottom: 1px solid white; /* Set header bottom border to white */
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid white; /* Set cell borders to white */
+}
+
+th {
+  font-weight: bold;
+}
+
+tr, td, th {
+  vertical-align: middle;
 }
 
 
