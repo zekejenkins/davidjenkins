@@ -83,7 +83,7 @@ By completing this analysis, I was able to:
 ## Visualizations
 
 ### Total Ad Spend vs. Sales:
-![Scatterplot of Total Ad Spend vs. Sales](https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png)
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(0); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ### TV Ad Spend vs. Sales:
 ![TV Line Fit Plot](tv_line_fit_plot.png)
