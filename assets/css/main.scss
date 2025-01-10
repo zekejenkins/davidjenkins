@@ -217,12 +217,12 @@ body.dark-theme .footer {
   border-top: 1px solid #333;
 }
 
-/* Center Tables and Adapt for Light/Dark Modes */
+/* Left Align Tables and Adapt for Light/Dark Modes */
 table {
-  margin: 1em auto; /* Center the table */
-  width: auto;
+  margin: 1em 0; /* Add spacing but remove centering */
+  width: 100%; /* Use full width */
   border-collapse: collapse;
-  text-align: center; /* Center-align table content */
+  text-align: left; /* Left-align table content */
   transition: all 0.3s ease;
 }
 
@@ -257,4 +257,5 @@ body {
     border: 1px solid white;
   }
 }
+
 
