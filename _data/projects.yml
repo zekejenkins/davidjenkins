@@ -16,7 +16,7 @@
   description: "Custom AutoHotkey scripts to optimize workflows."
   skills:
     - AutoHotkey
-  url: "/davidjenkins/projects/keyboard-shortcuts-automation/"
+  url: "/davidjenkins/projects/keyboard_shortcut_automation/"
 
 - title: "Data Gathering"
   description: "Custom AutoHotkey scripts to gather data."
