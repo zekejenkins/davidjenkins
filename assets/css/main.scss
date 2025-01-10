@@ -242,33 +242,26 @@ body {
   }
 }
 
-/* Dark mode table styles */
-@media (prefers-color-scheme: dark) {
-  table {
+/* Adjusted Table Styles */
+table {
   margin: 1em 0 1em 0.5em; /* Add small left margin and spacing */
   width: 100%; /* Use full width */
-  font-family: $global-font-family;
-  font-size: $type-size-6;
   border-collapse: collapse; /* Ensure borders collapse */
   text-align: left; /* Left-align content */
-  background-color: black; /* Set table background to black */
-  color: white; /* Set table text to white */
-  border: 1px solid white; /* Set table border to white */
-  transition: all 0.3s ease; /* Smooth transition for mode switching */
-
-  & + table {
-    margin-top: 1em;
-  }
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: 1px solid white; /* White borders */
+  transition: all 0.3s ease; /* Smooth transitions */
 }
 
 thead {
-  background-color: black; /* Set header background to black */
-  border-bottom: 1px solid white; /* Set header bottom border to white */
+  background-color: black; /* Black header background */
+  border-bottom: 1px solid white; /* White header bottom border */
 }
 
 th, td {
   padding: 0.5em;
-  border: 1px solid white; /* Set cell borders to white */
+  border: 1px solid white; /* White borders */
 }
 
 th {
@@ -276,6 +269,8 @@ th {
 }
 
 tr, td, th {
+  vertical-align: middle;
+}
   vertical-align: middle;
 }
 
