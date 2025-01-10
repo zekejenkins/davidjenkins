@@ -229,8 +229,8 @@ table {
 /* Light mode table styles */
 body {
   table {
-    border: 1px solid black;
-    color: black;
+    border: 1px solid white;
+    color: white;
   }
 
   thead {
@@ -238,15 +238,15 @@ body {
   }
 
   th, td {
-    border: 1px solid black;
+    border: 1px solid white;
   }
 }
 
 /* Dark mode table styles */
 @media (prefers-color-scheme: dark) {
   table {
-    border: 1px solid white;
-    color: white;
+    border: 1px solid black;
+    color: black;
   }
 
   thead {
@@ -254,7 +254,7 @@ body {
   }
 
   th, td {
-    border: 1px solid white;
+    border: 1px solid black;
   }
 }
 
