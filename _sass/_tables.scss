@@ -9,6 +9,9 @@ table {
   font-size: $type-size-6;
   border-collapse: collapse; /* Ensure borders collapse */
   text-align: left; /* Left-align content */
+  background-color: black; /* Set table background to black */
+  color: white; /* Set table text to white */
+  border: 1px solid white; /* Set table border to white */
   transition: all 0.3s ease; /* Smooth transition for mode switching */
 
   & + table {
@@ -17,15 +20,13 @@ table {
 }
 
 thead {
-  background-color: #f9f9f9; /* Default light mode background */
-  border-bottom: 1px solid white; /* Default light mode border */
-  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+  background-color: black; /* Set header background to black */
+  border-bottom: 1px solid white; /* Set header bottom border to white */
 }
 
 th, td {
   padding: 0.5em;
-  border: 1px solid white; /* Default light mode border */
-  transition: border-color 0.3s ease, color 0.3s ease;
+  border: 1px solid white; /* Set cell borders to white */
 }
 
 th {
@@ -34,37 +35,4 @@ th {
 
 tr, td, th {
   vertical-align: middle;
-}
-
-/* Dark Mode Table Styles */
-@media (prefers-color-scheme: dark) {
-  table {
-    border: 1px solid black;
-    color: black;
-  }
-
-  thead {
-    background-color: #1e1e1e;
-    border-bottom: 1px solid black;
-  }
-
-  th, td {
-    border: 1px solid black;
-  }
-}
-
-/* Light Mode (Default) Table Styles */
-body:not(.dark-theme) {
-  table {
-    border: 1px solid white;
-    color: white;
-  }
-
-  thead {
-    background-color: #f9f9f9;
-  }
-
-  th, td {
-    border: 1px solid white;
-  }
 }
