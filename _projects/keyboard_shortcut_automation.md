@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Keyboard Shortcut Automations with AutoHotkey"
-permalink: /projects/keyboard_shortcut_automation/
+permalink: /projects/keyboard-shortcuts-automation/
 author_profile: true
 ---
 
