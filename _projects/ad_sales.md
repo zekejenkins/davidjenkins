@@ -1,9 +1,9 @@
----
+
 layout: single
 title: "Sales Performance Analysis"
 permalink: /projects/sales_performance/
 author_profile: true
----
+
 
 ## Overview
 
@@ -15,7 +15,7 @@ By completing this analysis, I was able to:
 - Provide actionable insights for reallocating advertising budgets.
 - Predict sales performance under different budget scenarios.
 
---- 
+ 
 ## Features
 
 - **Scatterplot Analysis**:
@@ -28,7 +28,7 @@ By completing this analysis, I was able to:
   - Identifies the most effective ad spend strategy.
   - Recommends reallocating budget from Newspaper to TV and Radio.
 
----
+
 
 ## Regression Results
 
@@ -37,45 +37,45 @@ By completing this analysis, I was able to:
 - **Adjusted R²**: 0.9011 (adjusted for predictors).
 - **Standard Error**: 1.66 (low residual error).
 
----
+
 
 ### **Summary Output**
 
 | **Regression Statistics** |  **Values** |
-|---------------------------|-------------|
+||-|
 | Multiple R                | 0.950048046 |
 | R Square                  | 0.90259129  |
 | Adjusted R Square         | 0.90110034  |
 | Standard Error            | 1.661695147 |
 | Observations              | 200         |
 
----
+
 
 ### **ANOVA**
 
 |            |**df**| **SS**      | **MS**      | **F**       | **Significance F**  |
-|------------|------|-------------|-------------|-------------|---------------------|
+|||-|-|-||
 | Regression | 3    | 5014.78272  | 1671.59424  | 605.3801307 | 8.1337E-99          |
 | Residual   | 196  | 541.2012295 | 2.761230763 |             |                     |
 | Total      | 199  | 5555.98395  |             |             |                     |
 
----
+
 
 ### **Coefficients**
 
 | Predictor  | Coefficients | Standard Error | t Stat       | P-value     | Lower 95%     | Upper 95%     |
-|------------|--------------|----------------|--------------|-------------|---------------|---------------|
+||--|-|--|-|||
 | Intercept  | 4.625124079  | 0.307501165    | 15.04099695  | 1.68268E-34 | 4.018688356   | 5.231559801   |
 | TV         | 0.05444578   | 0.001375188    | 39.59152448  | 1.89294E-95 | 0.051733716   | 0.057157845   |
 | Radio      | 0.107001228  | 0.008489563    | 12.60385655  | 4.6021E-27  | 0.090258612   | 0.123743844   |
 | Newspaper  | 0.000335658  | 0.005788056    | 0.057991479  | 0.953814495 | -0.011079206  | 0.011750522   |
 
----
+
 
 ## Residual Output
 
 | Observation | Predicted Sales | Residuals   | Standard Residuals  |
-|-------------|-----------------|-------------|---------------------|
+|-|--|-||
 | 1           | 21.22097209     | 0.87902791  | 0.533027745         |
 | 2           | 11.26824775     | -0.86824775 | -0.526490835        |
 | 3           | 10.49620897     | 1.503791029 | 0.911873596         |
@@ -83,14 +83,14 @@ By completing this analysis, I was able to:
 
 (Truncated for brevity. Full data available in the attached project file.)
 
----
+
 
 ## Visualizations
 
 ### Total Ad Spend vs. Sales:
 <img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
----
+
 
 ## Recommendations
 
@@ -98,7 +98,7 @@ By completing this analysis, I was able to:
 2. Consider reallocating budgets from Newspaper to TV and Radio based on negligible impact of Newspaper advertising.
 3. Leverage this regression model to predict sales under different advertising scenarios.
 
----
+
 
 ## Technologies Used
 
@@ -106,7 +106,7 @@ By completing this analysis, I was able to:
 - Python (for additional analysis and chart generation)
 - Data Visualization Tools
 
----
+
 
 ## Technologies Used
 
@@ -117,4 +117,4 @@ By completing this analysis, I was able to:
 
 [View on GitHub](https://github.com/yourusername/sales-performance-analysis)
 
----
+
