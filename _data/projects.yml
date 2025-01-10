@@ -12,14 +12,6 @@
     - AutoHotkey
   url: "/davidjenkins/projects/erp_data_entry/"
   
-- title: "Web App for Data Visualization"
-  description: "A web-based tool for visualizing data using JavaScript and HTML/CSS."
-  skills:
-    - JavaScript
-    - HTML
-    - CSS
-  url: "/davidjenkins/projects/web-data-viz/"
-
 - title: "Keyboard Shortcuts Automation"
   description: "Custom AutoHotkey scripts to optimize workflows."
   skills:
