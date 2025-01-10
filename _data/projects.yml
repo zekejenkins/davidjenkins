@@ -33,3 +33,9 @@
     - AutoHotkey
     - SQL
   url: "/davidjenkins/projects/data_gathering/"
+  
+- title: "Ad Sales"
+  description: "Regression analysis and visualization of advertising impact on sales."
+  skills:
+    - Excel
+  url: "/davidjenkins/projects/sales_performance/"
