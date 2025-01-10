@@ -40,8 +40,8 @@ By completing this analysis, I was able to:
 
 ### **Summary Output**
 
-| **Regression Statistics** |
-|----------------------------|---|
+| **Regression Statistics** |  **Values** |
+|---------------------------|-------------|
 | Multiple R                | 0.950048046 |
 | R Square                  | 0.90259129  |
 | Adjusted R Square         | 0.90110034  |
@@ -85,12 +85,6 @@ By completing this analysis, I was able to:
 ### Total Ad Spend vs. Sales:
 <img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(0); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
-### TV Ad Spend vs. Sales:
-![TV Line Fit Plot](tv_line_fit_plot.png)
-
-### Regression Summary Output:
-![Regression Summary](regression_summary.png)
-
 ---
 
 ## Recommendations
@@ -106,19 +100,6 @@ By completing this analysis, I was able to:
 - Microsoft Excel (Data Analysis Toolpak)
 - Python (for additional analysis and chart generation)
 - Data Visualization Tools
-
----
-
-## Visualizations
-
-### Total Ad Spend vs. Sales:
-![Scatterplot of Total Ad Spend vs. Sales](total_ad_spend_vs_sales.png)
-
-### TV Ad Spend vs. Sales:
-![TV Line Fit Plot](tv_line_fit_plot.png)
-
-### Regression Output:
-![Regression Summary Output](regression_output.png)
 
 ---
 
