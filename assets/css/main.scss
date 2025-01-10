@@ -216,4 +216,21 @@ body.dark-theme .footer {
   color: #e5e5e5;
   border-top: 1px solid #333;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #000000; /* Black background */
+        color: #FFFFFF; /* White text */
+    }
+    /* Add any additional elements that need dark mode styling */
+    /* For example: */
+    header, footer {
+        background-color: #000000;
+        color: #FFFFFF;
+    }
+    /* Ensure all interactive elements are appropriately styled */
+    a {
+        color: #1E90FF; /* Adjust link color for dark mode */
+    }
+    /* Continue adding styles as needed */
+}
 
