@@ -21,12 +21,14 @@ table {
 
 thead {
   background-color: black; /* Set header background to black */
+  color: white; /* Ensure header text is white */
   border-bottom: 1px solid white; /* Set header bottom border to white */
 }
 
 th, td {
   padding: 0.5em;
   border: 1px solid white; /* Set cell borders to white */
+  color: white; /* Ensure text in cells remains white */
 }
 
 th {
@@ -35,4 +37,42 @@ th {
 
 tr, td, th {
   vertical-align: middle;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  table {
+    background-color: #000; /* Darker black for dark mode */
+    color: #fff; /* White text */
+    border: 1px solid #fff; /* White border */
+  }
+
+  thead {
+    background-color: #000; /* Ensure header remains black */
+    color: #fff; /* White text */
+  }
+
+  th, td {
+    color: #fff; /* White text for cells */
+    border: 1px solid #fff; /* White border for cells */
+  }
+}
+
+/* Light Mode Support */
+@media (prefers-color-scheme: light) {
+  table {
+    background-color: white; /* Light background */
+    color: black; /* Black text */
+    border: 1px solid black; /* Black border */
+  }
+
+  thead {
+    background-color: #f8f8f8; /* Light gray for header */
+    color: black; /* Black text */
+  }
+
+  th, td {
+    color: black; /* Black text for cells */
+    border: 1px solid black; /* Black border for cells */
+  }
 }
