@@ -65,8 +65,6 @@ By completing this analysis, I was able to:
 | Radio      | 0.107001228  | 0.008489563    | 12.60385655  | 4.6021E-27  | 0.090258612   | 0.123743844   |
 | Newspaper  | 0.000335658  | 0.005788056    | 0.057991479  | 0.953814495 | -0.011079206  | 0.011750522   |
 
----
-
 ## Residual Output
 
 | Observation | Predicted Sales | Residuals   | Standard Residuals  |
@@ -83,7 +81,7 @@ By completing this analysis, I was able to:
 ## Visualizations
 
 ### Total Ad Spend vs. Sales:
-<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(0); transition: filter 0.3s ease;" class="invert-on-dark"/>
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/total_ad_spend_vs_sales.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ---
 
