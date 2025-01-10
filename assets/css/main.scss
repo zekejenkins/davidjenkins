@@ -257,5 +257,21 @@ body {
     border: 1px solid black;
   }
 }
+/* Default: No inversion */
+.invert-on-dark {
+  filter: none;
+}
+
+/* Dark Mode: Invert images */
+@media (prefers-color-scheme: dark) {
+  .invert-on-dark {
+    filter: invert(1) brightness(1.2);
+  }
+}
+
+/* Dark Theme Class Override */
+body.dark-theme .invert-on-dark {
+  filter: invert(1) brightness(1.2);
+}
 
 
