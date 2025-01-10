@@ -3,13 +3,13 @@
    ========================================================================== */
 
 table {
-  margin: 1em 0; /* Remove auto-centering and add vertical spacing */
-  width: 100%; /* Use full width or adjust as needed */
+  margin: 1em 0; /* Center the table */
+  width: 100%; /* Adjust table width automatically */
   font-family: $global-font-family;
   font-size: $type-size-6;
   border-collapse: collapse;
   border: 1px solid $light-gray;
-  text-align: left; /* Left-align text within tables */
+  text-align: center; /* Center-align text */
 
   & + table {
     margin-top: 1em;
@@ -24,7 +24,7 @@ thead {
 th {
   padding: 0.5em;
   font-weight: bold;
-  text-align: left; /* Left-align header text */
+  text-align: center; /* Center-align header text */
   border-right: 1px solid $light-gray;
 }
 
