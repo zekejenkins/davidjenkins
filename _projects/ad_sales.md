@@ -50,11 +50,11 @@ By completing this analysis, I was able to:
 
 ### **ANOVA**
 
-| **df** | **SS**       | **MS**      | **F**        | **Significance F** |
-|--------|--------------|-------------|--------------|---------------------|
-| Regression | 3    | 5014.78272 | 1671.59424 | 605.3801307 | 8.1337E-99          |
-| Residual   | 196  | 541.2012295 | 2.761230763 |              |                     |
-| Total      | 199  | 5555.98395  |             |              |                     |
+|            |**df**| **SS**      | **MS**      | **F**       | **Significance F**  |
+|------------|------|-------------|-------------|-------------|---------------------|
+| Regression | 3    | 5014.78272  | 1671.59424  | 605.3801307 | 8.1337E-99          |
+| Residual   | 196  | 541.2012295 | 2.761230763 |             |                     |
+| Total      | 199  | 5555.98395  |             |             |                     |
 
 ### **Coefficients**
 
@@ -69,7 +69,7 @@ By completing this analysis, I was able to:
 
 ## Residual Output
 
-| Observation | Predicted Sales | Residuals   | Standard Residuals |
+| Observation | Predicted Sales | Residuals   | Standard Residuals  |
 |-------------|-----------------|-------------|---------------------|
 | 1           | 21.22097209     | 0.87902791  | 0.533027745         |
 | 2           | 11.26824775     | -0.86824775 | -0.526490835        |
