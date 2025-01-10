@@ -39,3 +39,9 @@
   skills:
     - Excel
   url: "/davidjenkins/projects/sales_performance/"
+
+- title: "Superstore Analysis"
+  description: "Superstore analysis."
+  skills:
+    - Excel
+  url: "/davidjenkins/projects/superstore_analysis/"
