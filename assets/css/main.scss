@@ -242,36 +242,43 @@ body {
   }
 }
 
-/* Adjusted Table Styles */
+/* Left Align Tables and Adapt for Light/Dark Modes */
 table {
-  margin: 1em 0 1em 0.5em; /* Add small left margin and spacing */
+  margin: 1em 0; /* Add spacing but remove centering */
   width: 100%; /* Use full width */
-  border-collapse: collapse; /* Ensure borders collapse */
-  text-align: left; /* Left-align content */
-  background-color: black; /* Black background */
-  color: white; /* White text */
-  border: 1px solid white; /* White borders */
-  transition: all 0.3s ease; /* Smooth transitions */
+  border-collapse: collapse;
+  text-align: left; /* Left-align table content */
+  transition: all 0.3s ease;
 }
 
-thead {
-  background-color: black; /* Black header background */
-  border-bottom: 1px solid white; /* White header bottom border */
+/* Light mode table styles */
+body {
+  table {
+    border: 1px solid black;
+    color: black;
+  }
+
+  thead {
+    background-color: #f9f9f9;
+  }
+
+  th, td {
+    border: 1px solid black;
+  }
 }
 
-th, td {
-  padding: 0.5em;
-  border: 1px solid white; /* White borders */
-}
+/* Dark mode table styles */
+@media (prefers-color-scheme: dark) {
+  table {
+    border: 1px solid white;
+    color: white;
+  }
 
-th {
-  font-weight: bold;
-}
+  thead {
+    background-color: #1e1e1e;
+  }
 
-tr, td, th {
-  vertical-align: middle;
+  th, td {
+    border: 1px solid white;
+  }
 }
-  vertical-align: middle;
-}
-
-
