@@ -40,13 +40,13 @@ By completing this analysis, I was able to:
 
 ### **Summary Output**
 
-| **Regression Statistics** |   |   |
-|----------------------------|---|---|
-| Multiple R                | 0.950048046 |   |
-| R Square                  | 0.90259129  |   |
-| Adjusted R Square         | 0.90110034  |   |
-| Standard Error            | 1.661695147 |   |
-| Observations              | 200         |   |
+| **Regression Statistics** |
+|----------------------------|---|
+| Multiple R                | 0.950048046 |
+| R Square                  | 0.90259129  |
+| Adjusted R Square         | 0.90110034  |
+| Standard Error            | 1.661695147 |
+| Observations              | 200         |
 
 ### **ANOVA**
 
