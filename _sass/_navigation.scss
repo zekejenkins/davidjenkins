@@ -2,276 +2,91 @@
    NAVIGATION
    ========================================================================== */
 
-/*
-   Breadcrumb navigation links
-   ========================================================================== */
-
-.breadcrumbs {
-  @include container;
-  @include clearfix;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 2em;
-  padding-right: 2em;
-  font-family: $sans-serif;
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.30s;
-          animation-delay: 0.30s;
-
-  @include breakpoint($large) {
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  @include breakpoint($x-large) {
-    max-width: $x-large;
-  }
-
-  ol {
-    padding: 0;
-    list-style: none;
-    font-size: $type-size-6;
-
-    @include breakpoint($large) {
-      @include span(10 of 12 last);
-    }
-
-    @include breakpoint($x-large) {
-      @include prefix(0.5 of 12);
-    }
-  }
-
-  li {
-    display: inline;
-  }
-
-  .current {
-    font-weight: bold;
-  }
-}
-
-/* Dark Mode Based on System Settings */
+/* Dark mode styles */
 @media (prefers-color-scheme: dark) {
-  .breadcrumbs {
-    color: #e5e5e5; /* Light text for breadcrumb */
-    background-color: #1e1e1e; /* Dark background */
+  .breadcrumbs,
+  .pagination,
+  .greedy-nav,
+  .nav__list,
+  .toc {
+    background-color: black;
+    color: white;
   }
 
-  .breadcrumbs ol {
-    color: #e5e5e5;
+  .pagination a,
+  .pagination--pager a {
+    color: white;
+    border: 1px solid #444; /* Adjust border color if necessary */
   }
 
-  .breadcrumbs .current {
-    color: #ffffff; /* Bright white for current breadcrumb */
-  }
-}
-
-/* Dark Theme Class Override */
-body.dark-theme .breadcrumbs {
-  color: #e5e5e5;
-  background-color: #1e1e1e;
-}
-
-body.dark-theme .breadcrumbs ol {
-  color: #e5e5e5;
-}
-
-body.dark-theme .breadcrumbs .current {
-  color: #ffffff;
-}
-
-/*
-   Post pagination navigation links
-   ========================================================================== */
-
-.pagination {
-  @include full();
-  @include clearfix();
-  margin-top: 1em;
-  padding-top: 1em;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-family: $sans-serif;
+  .active {
+    background: #444; /* Adjust active item background for dark mode */
   }
 
-  li {
-    display: block;
-    float: left;
-    margin-left: -1px;
-
-    a {
-      margin-bottom: 0.25em;
-      padding: 0.5em 1em;
-      font-family: $sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      line-height: 1.5;
-      text-align: center;
-      text-decoration: none;
-      color: mix(#fff, $gray, 25%);
-      border: 1px solid $light-gray;
-      border-radius: 0;
-
-      &:hover {
-        color: $link-color-hover;
-      }
-
-      &.current {
-        color: #fff;
-        background: $primary-color;
-      }
-
-      &.disabled {
-        color: mix(#fff, $gray, 75%);
-        pointer-events: none;
-        cursor: not-allowed;
-      }
-    }
-
-    &:first-child {
-      margin-left: 0;
-
-      a {
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
-      }
-    }
-
-    &:last-child {
-      a {
-        border-top-right-radius: $border-radius;
-        border-bottom-right-radius: $border-radius;
-      }
-    }
+  .toc {
+    background-color: #333; /* Slightly lighter for contrast */
+    border-color: #555;
   }
 
-  /* next/previous buttons */
-  &--pager {
-    display: block;
-    padding: 1em 2em;
-    float: left;
-    width: 50%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: mix(#fff, $gray, 50%);
-    border: 1px solid $light-gray;
-    border-radius: $border-radius;
+  .toc__menu a {
+    color: #ddd; /* Slightly lighter text for dark mode */
+  }
 
-    &:hover {
-      color: $link-color-hover;
-    }
+  .nav__title,
+  .nav__sub-title {
+    color: white;
+  }
 
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
+  /* Adjust hover states for dark mode */
+  .pagination a:hover,
+  .pagination--pager a:hover {
+    color: $link-color-hover;
+  }
 
-    &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    &.disabled {
-      color: mix(#fff, $gray, 75%);
-      pointer-events: none;
-      cursor: not-allowed;
-    }
+  .toc__menu a:hover {
+    color: #fff;
+    background: #444;
   }
 }
 
-/* Dark Mode Based on System Settings */
-@media (prefers-color-scheme: dark) {
-  .pagination {
-    background-color: #1e1e1e;
-    color: #e5e5e5;
+/* Light mode styles (default) */
+@media (prefers-color-scheme: light) {
+  .breadcrumbs,
+  .pagination,
+  .greedy-nav,
+  .nav__list,
+  .toc {
+    background-color: white;
+    color: black;
   }
 
-  .pagination a {
-    color: #e5e5e5;
-    border: 1px solid #333;
-
-    &:hover {
-      color: #ffffff;
-    }
+  .pagination a,
+  .pagination--pager a {
+    color: black;
+    border: 1px solid #ddd; /* Adjust border color for light mode */
   }
 
-  .pagination a.current {
-    background: #333;
-    color: #ffffff;
-  }
-}
-
-/* Dark Theme Class Override */
-body.dark-theme .pagination {
-  background-color: #1e1e1e;
-  color: #e5e5e5;
-}
-
-body.dark-theme .pagination a {
-  color: #e5e5e5;
-  border: 1px solid #333;
-
-  &:hover {
-    color: #ffffff;
-  }
-}
-
-body.dark-theme .pagination a.current {
-  background: #333;
-  color: #ffffff;
-}
-
-/* Greedy Navigation (Dark Mode) */
-@media (prefers-color-scheme: dark) {
-  .greedy-nav {
-    background-color: #1e1e1e;
-
-    a {
-      color: #e5e5e5;
-
-      &:hover {
-        color: #ffffff;
-      }
-    }
+  .active {
+    background: $primary-color; /* Keep active item styling */
   }
 
-  .hidden-links {
-    background-color: #333;
-    color: #e5e5e5;
-
-    a {
-      color: #e5e5e5;
-
-      &:hover {
-        background-color: #444;
-        color: #ffffff;
-      }
-    }
+  .toc {
+    background-color: #fff;
+    border-color: #ddd;
   }
-}
 
-body.dark-theme .greedy-nav {
-  background-color: #1e1e1e;
-}
+  .toc__menu a {
+    color: #333; /* Dark text for light mode */
+  }
 
-body.dark-theme .hidden-links {
-  background-color: #333;
-  color: #e5e5e5;
+  /* Adjust hover states for light mode */
+  .pagination a:hover,
+  .pagination--pager a:hover {
+    color: $link-color-hover;
+  }
 
-  a {
-    color: #e5e5e5;
-
-    &:hover {
-      background-color: #444;
-      color: #ffffff;
-    }
+  .toc__menu a:hover {
+    color: #000;
+    background: #f0f0f0;
   }
 }
