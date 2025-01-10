@@ -15,8 +15,7 @@ By completing this analysis, I was able to:
 - Provide actionable insights for reallocating advertising budgets.
 - Predict sales performance under different budget scenarios.
 
----
-
+--- 
 ## Features
 
 - **Scatterplot Analysis**:
@@ -38,6 +37,8 @@ By completing this analysis, I was able to:
 - **Adjusted R²**: 0.9011 (adjusted for predictors).
 - **Standard Error**: 1.66 (low residual error).
 
+---
+
 ### **Summary Output**
 
 | **Regression Statistics** |  **Values** |
@@ -48,6 +49,8 @@ By completing this analysis, I was able to:
 | Standard Error            | 1.661695147 |
 | Observations              | 200         |
 
+---
+
 ### **ANOVA**
 
 |            |**df**| **SS**      | **MS**      | **F**       | **Significance F**  |
@@ -55,6 +58,8 @@ By completing this analysis, I was able to:
 | Regression | 3    | 5014.78272  | 1671.59424  | 605.3801307 | 8.1337E-99          |
 | Residual   | 196  | 541.2012295 | 2.761230763 |             |                     |
 | Total      | 199  | 5555.98395  |             |             |                     |
+
+---
 
 ### **Coefficients**
 
@@ -64,6 +69,8 @@ By completing this analysis, I was able to:
 | TV         | 0.05444578   | 0.001375188    | 39.59152448  | 1.89294E-95 | 0.051733716   | 0.057157845   |
 | Radio      | 0.107001228  | 0.008489563    | 12.60385655  | 4.6021E-27  | 0.090258612   | 0.123743844   |
 | Newspaper  | 0.000335658  | 0.005788056    | 0.057991479  | 0.953814495 | -0.011079206  | 0.011750522   |
+
+---
 
 ## Residual Output
 
