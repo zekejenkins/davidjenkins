@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Automated Report Generator"
-permalink: /projects/automated-report-generator/
+permalink: /projects/automated_report_generator/
 author_profile: true
 ---
 
