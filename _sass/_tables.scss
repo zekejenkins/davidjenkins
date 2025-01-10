@@ -3,13 +3,13 @@
    ========================================================================== */
 
 table {
-  margin: 1em 0; /* Center the table */
-  width: 100%; /* Adjust table width automatically */
+  margin: 1em 0 1em 0.5em; /* Add small left margin and spacing */
+  width: 100%; /* Use full width */
   font-family: $global-font-family;
   font-size: $type-size-6;
-  border-collapse: collapse;
-  border: 1px solid white;
-  text-align: center; /* Center-align text */
+  border-collapse: collapse; /* Ensure borders collapse */
+  text-align: left; /* Left-align content */
+  transition: all 0.3s ease; /* Smooth transition for mode switching */
 
   & + table {
     margin-top: 1em;
@@ -17,29 +17,44 @@ table {
 }
 
 thead {
-  background-color: black;
-  border-bottom: 1px solid white;
+  background-color: #f9f9f9; /* Default light mode background */
+  border-bottom: 1px solid black; /* Default light mode border */
+  transition: background-color 0.3s ease, border-bottom 0.3s ease;
+}
+
+th, td {
+  padding: 0.5em;
+  border: 1px solid black; /* Default light mode border */
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 th {
-  padding: 0.5em;
   font-weight: bold;
-  text-align: center; /* Center-align header text */
-  border-right: 1px solid white;
-}
-
-td {
-  padding: 0.5em;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
 }
 
 tr, td, th {
   vertical-align: middle;
 }
 
-/* Light mode table styles */
-body {
+/* Dark Mode Table Styles */
+@media (prefers-color-scheme: dark) {
+  table {
+    border: 1px solid white;
+    color: white;
+  }
+
+  thead {
+    background-color: #1e1e1e;
+    border-bottom: 1px solid white;
+  }
+
+  th, td {
+    border: 1px solid white;
+  }
+}
+
+/* Light Mode (Default) Table Styles */
+body:not(.dark-theme) {
   table {
     border: 1px solid black;
     color: black;
@@ -51,23 +66,5 @@ body {
 
   th, td {
     border: 1px solid black;
-  }
-}
-
-/* Dark mode table styles */
-@media (prefers-color-scheme: dark) {
-  body {
-    table {
-      border: 1px solid white;
-      color: white;
-    }
-
-    thead {
-      background-color: #1e1e1e;
-    }
-
-    th, td {
-      border: 1px solid white;
-    }
   }
 }
