@@ -11,7 +11,6 @@
 */
 
 @import "vendor/breakpoint/breakpoint"; // media query mixins
-@import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
 
@@ -66,7 +65,7 @@
   background-color: ##cf98bb;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2)
-  color: $text-color;
+  color: #fff;
 }
 
 .tile img {
