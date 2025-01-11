@@ -17,7 +17,7 @@
 
 @import "reset";
 @import "base";
-
+@import "_sass/_variables";
 @import "utilities";
 @import "animations";
 @import "tables";
@@ -63,9 +63,10 @@
 }
 
 .tile:hover {
-  background-color: #333333;
+  background-color: ##cf98bb;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2)
+  color: $text-color;
 }
 
 .tile img {
