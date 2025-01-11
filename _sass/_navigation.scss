@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: mix(#000000, $gray, 25%);
+      color: mix(#000, $gray, 25%);
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -92,12 +92,12 @@
       }
 
       &.current {
-        color: #000000;
+        color: #fff;
         background: $primary-color;
       }
 
       &.disabled {
-        color: mix(#000000, $gray, 75%);
+        color: mix(#000, $gray, 75%);
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -131,7 +131,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: mix(#000000, $gray, 50%);
+    color: mix(#000, $gray, 50%);
     border: 1px solid $light-gray;
     border-radius: $border-radius;
 
@@ -151,7 +151,7 @@
     }
 
     &.disabled {
-      color: mix(#000000, $gray, 75%);
+      color: mix(#000, $gray, 75%);
       pointer-events: none;
       cursor: not-allowed;
     }
