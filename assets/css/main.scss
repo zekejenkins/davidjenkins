@@ -77,7 +77,9 @@
 .skills-grid img {
   filter: invert(1); /* Invert icons in skills section */
 }
-
+.tile:hover .skills-grid img {
+  filter: none; /* Remove inversion on hover */
+}
 /* Global Dark Mode */
 body {
   background-color: #000000;
