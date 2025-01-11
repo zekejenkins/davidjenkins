@@ -53,19 +53,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  background-color: white;
-  color: #333;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .tile:hover {
-  background-color: #f0f0f0;
+  background-color: #333333;
   transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .tile img {
@@ -74,132 +74,47 @@
   transition: filter 0.3s ease;
 }
 
-/* Light and Dark Modes */
+.skills-grid img {
+  filter: invert(1); /* Invert icons in skills section */
+}
+
+/* Global Dark Mode */
 body {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000000;
+  color: #ffffff;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
-  filter: none;
+  filter: none; /* Do not invert general images */
   transition: filter 0.3s ease;
 }
 
-/* Default Light Mode Table Styling */
+/* Table Styling */
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #ffffff; /* White background for light mode */
-  color: #000000; /* Black text */
+  background-color: #000000;
+  color: #ffffff;
 }
 
 table th,
 table td {
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   padding: 8px;
   text-align: left;
 }
 
 table th {
-  background-color: #f4f4f4; /* Light gray for headers */
-  color: #000000;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-  .tile {
-    background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #333;
-  }
-
-  .tile:hover {
-    background-color: #333333;
-  }
-
-  img {
-    filter: none; /* Do not invert general images */
-  }
-
-  .skills-grid img {
-    filter: invert(1); /* Invert icons in skills section */
-  }
-
-  .skills-grid,
-  .project-item,
-  .header,
-  .footer {
-    background-color: #000000;
-    color: #ffffff;
-    border-color: #333;
-  }
-
-  /* Dark Mode Table Styling */
-  table {
-    background-color: #000000; /* Black background for dark mode */
-    color: #ffffff; /* White text */
-  }
-
-  table th,
-  table td {
-    border: 1px solid #333; /* Darker border for dark mode */
-  }
-
-  table th {
-    background-color: #1e1e1e; /* Dark gray for headers */
-    color: #ffffff;
-  }
-}
-
-/* Dark Theme Class Override */
-body.dark-theme {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.dark-theme img {
-  filter: none; /* Do not invert general images */
-}
-
-body.dark-theme .skills-grid img {
-  filter: invert(1); /* Invert icons in skills section */
-}
-
-body.dark-theme .tile {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.dark-theme .tile:hover {
-  background-color: #333333;
-}
-
-body.dark-theme .skills-grid,
-body.dark-theme .project-item,
-body.dark-theme .header,
-body.dark-theme .footer {
-  background-color: #000000;
-  color: #ffffff;
-  border-color: #333;
-}
-
-body.dark-theme table {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.dark-theme table th,
-body.dark-theme table td {
-  border: 1px solid #333;
-}
-
-body.dark-theme table th {
   background-color: #1e1e1e;
   color: #ffffff;
 }
 
+.skills-grid,
+.project-item,
+.header,
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #333;
+}
