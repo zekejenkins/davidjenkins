@@ -39,7 +39,6 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
-
 /* Skills Grid */
 .skills-grid {
   display: grid;
@@ -124,7 +123,11 @@ table th {
   }
 
   img {
-    filter: invert(1);
+    filter: none; /* Do not invert general images */
+  }
+
+  .skills-grid img {
+    filter: invert(1); /* Invert icons in skills section */
   }
 
   .skills-grid,
@@ -160,7 +163,11 @@ body.dark-theme {
 }
 
 body.dark-theme img {
-  filter: invert(1);
+  filter: none; /* Do not invert general images */
+}
+
+body.dark-theme .skills-grid img {
+  filter: invert(1); /* Invert icons in skills section */
 }
 
 body.dark-theme .tile {
@@ -195,3 +202,4 @@ body.dark-theme table th {
   background-color: #1e1e1e;
   color: #ffffff;
 }
+
