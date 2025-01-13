@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Python Projects"
-permalink: /skills/python/
+title: "Data Visualization Projects"
+permalink: /skills/visualization/
 author_profile: true
 ---
 
