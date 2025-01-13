@@ -9,7 +9,7 @@
   skills:
     - JavaScript
     - API
-  url: "/davidjenkins/projects/trello_card_creator/"
+  url: "/davidjenkins/projects/trello_card_creator/" 
 
 - title: "ERP Data Entry"
   description: "A Data Entry Program"
