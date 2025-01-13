@@ -43,7 +43,7 @@ This project demonstrates my ability to identify bottlenecks in operational work
 
 ## Code Example
 
-```autohotkey
+```javascript
 /*	;~ Description
  	Author: 			David Jenkins
 	Last Modified By: 	David Jenkins
