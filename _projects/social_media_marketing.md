@@ -333,22 +333,24 @@ except Exception as e:
 ### Residual Distribution
 <img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/residual_distribution.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
-## Regression Results
-
-### Summary Statistics:
-- **R²**: 0.136 (13.6% of variation in CTR explained by the model).
-- **Adjusted R²**: 0.121 (adjusted for predictors).
-- **Standard Error**: Low residual error, but model explains a limited portion of CTR variation.
-
 ### **Summary Output**
 
-| **Regression Statistics** |  **Values** |
+| **Regression Statistics** | **Values**  |
 |---------------------------|-------------|
 | Multiple R                | 0.3688      |
 | R Square                  | 0.136       |
 | Adjusted R Square         | 0.121       |
 | Standard Error            | 0.510       |
 | Observations              | 1000        |
+
+#### Notes and Insights
+- **Multiple R**: Indicates a moderate correlation between observed and predicted CTR values. While not very strong, it shows that the model captures some relationship between predictors and CTR.
+- **R Square**: Only 13.6% of CTR variance is explained by the predictors, suggesting that other factors (not included in the model) significantly impact CTR. Consider adding interaction terms or exploring nonlinear relationships.
+- **Adjusted R Square**: Slightly lower than R² due to the number of predictors. This suggests that some predictors may not add meaningful explanatory power.
+- **Standard Error**: A value of 0.510 indicates moderate dispersion of residuals. While this doesn’t indicate poor fit, it shows room for model improvement.
+- **Observations**: The large sample size (1,000 observations) ensures robust statistical results, minimizing the impact of outliers.
+
+---
 
 ### **ANOVA**
 
@@ -357,6 +359,13 @@ except Exception as e:
 | Regression | 17     | 32.91         | 1.94          | 9.07      | 3.11E-22           |
 | Residual   | 982    | 210.15        | 0.21          |           |                    |
 | Total      | 999    | 243.06        |               |           |                    |
+
+#### Notes and Insights
+- **F-Statistic (9.07)**: Indicates the model as a whole is statistically significant (Significance F < 0.05). This means that at least one predictor has a significant relationship with CTR.
+- **Significance F (3.11E-22)**: The probability of observing this F-statistic under the null hypothesis is almost zero, confirming that the model is better than using the mean CTR as a predictor.
+- **SS (Sum of Squares)**: Regression SS (32.91) is relatively small compared to Residual SS (210.15), showing that most of the variability in CTR remains unexplained by the model.
+
+---
 
 ### **Coefficients**
 
@@ -381,6 +390,17 @@ except Exception as e:
 | Campaign_Type_Conversion  | -0.0266      | 0.0420       | -0.634     | 0.526     | -0.109        | 0.056         |
 | Campaign_Type_Lead Gen    | -0.0350      | 0.0430       | -0.822     | 0.411     | -0.119        | 0.049         |
 
+#### Notes and Insights
+- **Intercept**: A CTR baseline of 0.3256 when all predictors are zero, though not directly interpretable due to one-hot encoding.
+- **Ad Spend (p = 0.610)**: Not statistically significant. Implies spending alone does not directly impact CTR, highlighting the need for strategic budget use.
+- **Impressions (p < 0.001)**: Negative and significant. High impressions can dilute CTR, underscoring the importance of targeted campaigns.
+- **Clicks (p < 0.001)**: Strong positive predictor of CTR, suggesting investments in engagement-focused strategies like better CTAs or landing pages.
+- **Platform Performance**:
+  - Instagram shows slight positive influence (β = 0.0488), but p-value (0.376) suggests limited statistical significance.
+  - Other platforms show negligible impacts, suggesting reevaluation of resource allocation.
+- **Regions and Age Groups**: None were significant, pointing to potential missed opportunities in segmentation or personalization.
+
+---
 ## Code Implementation
 
 The full code for this project can be found in my [GitHub repository](https://github.com/zekejenkins/davidjenkins). It includes:
