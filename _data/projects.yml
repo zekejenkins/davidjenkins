@@ -1,3 +1,9 @@
+- title: "Social Media Marketing Analysis"
+  description: "Analyze social media marketing data using Python."
+  skills:
+    - Python
+  url: "/davidjenkins/projects/social_media_marketing/"
+  
 - title: "Trello Card Creator"
   description: "A Google Apps Script project to automate creating Trello cards from spreadsheet data."
   skills:
