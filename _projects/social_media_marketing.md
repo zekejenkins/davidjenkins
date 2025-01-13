@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Marketing Campaign Analysis"
-permalink: /projects/marketing_analysis/
+permalink: /projects/social_media_marketing/
 author_profile: true
 ---
 
