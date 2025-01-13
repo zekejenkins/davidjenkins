@@ -206,168 +206,27 @@ The dataset is available on [GitHub](https://github.com/zekejenkins/davidjenkins
 
 ```python
 import pandas as pd
-import numpy as np
-import statsmodels.api as sm
-from statsmodels.stats.outliers_influence import variance_inflation_factor
-from sklearn.metrics import mean_absolute_error, mean_squared_error
-import seaborn as sns
-import matplotlib.pyplot as plt
 
 # Load the dataset
 file_path = "/Users/davidjenkins/Downloads/Marketing Data.csv"
-try:
-    data = pd.read_csv(file_path)
-    print("Dataset loaded successfully.")
-except Exception as e:
-    print(f"Error loading dataset: {e}")
-    exit()
+df = pd.read_csv(file_path)
 
-# Data Cleaning: Convert CTR from percentage string to numeric value
-try:
-    data['CTR'] = data['CTR'].str.rstrip('%').astype(float) / 100
-    print("CTR column cleaned and converted to numeric.")
-except Exception as e:
-    print(f"Error cleaning CTR column: {e}")
-    exit()
+# Function to clean special characters in a column
+def clean_special_characters(column):
+    return column.str.replace(r"[^\w\s]", "", regex=True).str.strip()
 
-# Step 1: Explore the dataset
-print("\nStep 1: Exploring the dataset...")
-print("Dataset Shape:", data.shape)
-print("\nDataset Info:")
-print(data.info())
-print("\nDescriptive Statistics:")
-print(data.describe())
-print("\nMissing Values:")
-print(data.isnull().sum())
+# Function to convert percentage strings to floats
+def convert_percentages(column):
+    return column.str.rstrip('%').astype(float) / 100
 
-# Step 2: Correlation matrix (filter numeric columns only)
-print("\nStep 2: Calculating correlation matrix...")
-try:
-    numeric_data = data.select_dtypes(include=[np.number])
-    corr_matrix = numeric_data.corr()
-    print("\nCorrelation Matrix:")
-    print(corr_matrix)
+# Function to standardize text (e.g., remove trailing spaces, capitalize)
+def standardize_text(column):
+    return column.str.strip().str.title()
 
-    # Visualize the correlation matrix
-    plt.figure(figsize=(10, 8))
-    sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt=".2f")
-    plt.title("Correlation Matrix")
-    plt.show()
-except Exception as e:
-    print(f"Error calculating correlation matrix: {e}")
+# Clean `Targeted_Location` column (remove special characters)
+df['Targeted_Location'] = clean_special_characters(df['Targeted_Location'])
 
-# Step 3: Define dependent (y) and independent (X) variables
-print("\nStep 3: Preparing data for regression...")
-X = data[['Ad_Spend', 'Impressions', 'Clicks', 'Platform', 'Region', 'Age_Group', 'Campaign_Type']]
-y = data['CTR']
+# Convert percentage columns to numeric
+df['CTR'] = convert_percentages(df['CTR'])
+df['Conversion_Rate'] = convert_percentages(df['Conversion_R
 
-# Step 4: One-hot encode categorical variables
-try:
-    print("One-hot encoding categorical variables...")
-    categorical_columns = ['Platform', 'Region', 'Age_Group', 'Campaign_Type']
-    X_encoded = pd.get_dummies(X, columns=categorical_columns, drop_first=True)
-    print("Categorical variables encoded successfully.")
-except Exception as e:
-    print(f"Error encoding categorical variables: {e}")
-    exit()
-
-# Add a constant for the intercept
-X_encoded = sm.add_constant(X_encoded)
-
-# Convert all columns to numeric
-X_encoded = X_encoded.astype(float)
-y = y.astype(float)
-
-# Step 5: Check Variance Inflation Factor (VIF) for multicollinearity
-print("\nStep 5: Checking multicollinearity using VIF...")
-try:
-    vif_data = pd.DataFrame()
-    vif_data['Variable'] = X_encoded.columns
-    vif_data['VIF'] = [variance_inflation_factor(X_encoded.values, i) for i in range(X_encoded.shape[1])]
-    print("\nVariance Inflation Factor (VIF):")
-    print(vif_data)
-except Exception as e:
-    print(f"Error calculating VIF: {e}")
-
-# Step 6: Fit the regression model
-print("\nStep 6: Running regression model...")
-try:
-    model = sm.OLS(y, X_encoded).fit()
-    print("\nRegression Summary:")
-    print(model.summary())
-except Exception as e:
-    print(f"Error running regression: {e}")
-    exit()
-
-# Step 7: Residual analysis
-print("\nStep 7: Analyzing residuals...")
-residuals = model.resid
-fitted_values = model.fittedvalues
-
-# Plot residuals
-plt.figure(figsize=(10, 6))
-sns.histplot(residuals, kde=True, bins=30)
-plt.title("Residual Distribution")
-plt.xlabel("Residuals")
-plt.ylabel("Frequency")
-plt.show()
-
-# Residuals vs Fitted values
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x=fitted_values, y=residuals)
-plt.axhline(0, color='red', linestyle='--')
-plt.title("Residuals vs Fitted Values")
-plt.xlabel("Fitted Values")
-plt.ylabel("Residuals")
-plt.show()
-
-# Step 8: Model performance metrics
-print("\nStep 8: Evaluating model performance...")
-try:
-    y_pred = model.predict(X_encoded)
-    mae = mean_absolute_error(y, y_pred)
-    mse = mean_squared_error(y, y_pred)
-    rmse = np.sqrt(mse)
-
-    print("\nPerformance Metrics:")
-    print(f"Mean Absolute Error (MAE): {mae:.4f}")
-    print(f"Mean Squared Error (MSE): {mse:.4f}")
-    print(f"Root Mean Squared Error (RMSE): {rmse:.4f}")
-except Exception as e:
-    print(f"Error calculating performance metrics: {e}")
-
-# Step 9: Model insights
-print("\nStep 9: Interpreting model insights...")
-r_squared = model.rsquared
-adj_r_squared = model.rsquared_adj
-print(f"R-squared: {r_squared:.4f}")
-print(f"Adjusted R-squared: {adj_r_squared:.4f}")
-if r_squared < 0.3:
-    print("The model explains less than 30% of the variance in CTR. Consider exploring additional features or interaction terms.")
-
-# Significant predictors
-significant_vars = model.pvalues[model.pvalues < 0.05]
-print("\nSignificant Predictors (p-value < 0.05):")
-print(significant_vars)
-
-# Step 10: Export results
-print("\nStep 10: Exporting results...")
-try:
-    coefficients = pd.DataFrame({
-        'Variable': X_encoded.columns,
-        'Coefficient': model.params,
-        'P-Value': model.pvalues,
-        'Confidence Interval Lower': model.conf_int()[0],
-        'Confidence Interval Upper': model.conf_int()[1]
-    })
-    coefficients.to_csv("/Users/davidjenkins/Downloads/Regression_Coefficients.csv", index=False)
-
-    data['Fitted_Values'] = fitted_values
-    data['Residuals'] = residuals
-    data.to_csv("/Users/davidjenkins/Downloads/Regression_Residuals.csv", index=False)
-
-    print("\nResults exported:")
-    print("- Coefficients saved to 'Regression_Coefficients.csv'")
-    print("- Residuals saved to 'Regression_Residuals.csv'")
-except Exception as e:
-    print(f"Error exporting results: {e}")
