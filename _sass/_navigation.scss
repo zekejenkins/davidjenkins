@@ -2,10 +2,7 @@
    NAVIGATION
    ========================================================================== */
 
-/*
-   Breadcrumb navigation links
-   ========================================================================== */
-
+/* Breadcrumb navigation links */
 .breadcrumbs {
   @include container;
   @include clearfix;
@@ -14,6 +11,8 @@
   padding-left: 2em;
   padding-right: 2em;
   font-family: $sans-serif;
+  color: #ffffff;
+  background-color: #000000;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.30s;
@@ -32,6 +31,7 @@
     padding: 0;
     list-style: none;
     font-size: $type-size-6;
+    color: #ffffff;
 
     @include breakpoint($large) {
       @include span(10 of 12 last);
@@ -44,6 +44,7 @@
 
   li {
     display: inline;
+    color: #ffffff;
   }
 
   .current {
@@ -51,22 +52,20 @@
   }
 }
 
-
-/*
-   Post pagination navigation links
-   ========================================================================== */
-
+/* Post pagination navigation links */
 .pagination {
   @include full();
   @include clearfix();
   margin-top: 1em;
   padding-top: 1em;
+  background-color: #000000;
 
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
     font-family: $sans-serif;
+    color: #ffffff;
   }
 
   li {
@@ -83,21 +82,22 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: #fff;
-      border: 1px solid $light-gray;
-      border-radius: 0;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      background-color: #000000;
 
       &:hover {
-        color: #fff;
+        color: #ffffff;
+        background-color: #333333;
       }
 
       &.current {
-        color: #fff;
-        background: $primary-color;
+        color: #000000;
+        background: #ffffff;
       }
 
       &.disabled {
-        color: #fff;
+        color: #777777;
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -119,73 +119,24 @@
       }
     }
   }
-
-  /* next/previous buttons */
-  &--pager {
-    display: block;
-    padding: 1em 2em;
-    float: left;
-    width: 50%;
-    font-family: $sans-serif;
-    font-size: $type-size-5;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid $light-gray;
-    border-radius: $border-radius;
-
-    &:hover {
-      color: #fff;
-    }
-
-    &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-
-    &:last-child {
-      margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
-    }
-
-    &.disabled {
-      color: mix(#000, $gray, 75%);
-      pointer-events: none;
-      cursor: not-allowed;
-    }
-  }
 }
 
-.page__content + .pagination,
-.page__meta + .pagination,
-.page__share + .pagination,
-.page__comments + .pagination {
-  margin-top: 2em;
-  padding-top: 2em;
-  border-top: 1px solid $border-color;
-}
-
-
-/*
-   Priority plus navigation
-   ========================================================================== */
-
+/* Priority plus navigation */
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background-color: #000000;
 
   a {
     display: block;
     margin: 0 1rem;
     padding: 0.5rem 0;
-    color: $masthead-link-color;
+    color: #ffffff;
     text-decoration: none;
 
     &:hover {
-      color: $masthead-link-color-hover;
+      color: #ffffff;
+      background-color: #333333;
     }
   }
 
@@ -196,7 +147,7 @@
     padding: 0 0.5rem;
     border: 0;
     outline: none;
-    background-color: $primary-color;
+    background-color: #ffffff;
     color: #000000;
     cursor: pointer;
     z-index: 100;
@@ -208,6 +159,7 @@
     li {
       display: table-cell;
       vertical-align: middle;
+      color: #ffffff;
 
       &:first-child {
         font-weight: bold;
@@ -234,7 +186,7 @@
         left: 0;
         bottom: 0;
         height: 4px;
-        background: mix(#000000, $primary-color, 50%);
+        background: #ffffff;
         width: 100%;
         -webkit-transition: $global-transition;
         transition: $global-transition;
@@ -257,7 +209,7 @@
     right: 0;
     margin-top: 15px;
     padding: 5px;
-    border: 1px solid $border-color;
+    border: 1px solid #ffffff;
     border-radius: $border-radius;
     background: #000000;
     box-shadow: 0 0 10px rgba(#000, 0.25);
@@ -266,10 +218,11 @@
       margin: 0;
       padding: 10px 20px;
       font-size: $type-size-5;
+      color: #ffffff;
 
       &:hover {
-        color: $masthead-link-color-hover;
-        background: mix(#000000, $primary-color, 75%);
+        color: #ffffff;
+        background: #333333;
       }
     }
 
@@ -281,7 +234,7 @@
       width: 0;
       border-style: solid;
       border-width: 0 10px 10px;
-      border-color: $border-color transparent;
+      border-color: #ffffff transparent;
       display: block;
       z-index: 0;
     }
@@ -301,7 +254,7 @@
 
     li {
       display: block;
-      border-bottom: 1px solid $border-color;
+      border-bottom: 1px solid #ffffff;
 
       &:last-child {
         border-bottom: none;
@@ -310,13 +263,10 @@
   }
 }
 
-
-/*
-   Navigation list
-   ========================================================================== */
-
+/* Navigation list */
 .nav__list {
   font-size: 1.25rem;
+  background-color: #000000;
 
   ul {
     margin-bottom: 1em;
@@ -325,10 +275,11 @@
   a {
     display: block;
     padding: 0.125em 0;
-    color: inherit;
+    color: #ffffff;
 
     &:hover {
       text-decoration: underline;
+      color: #ffffff;
     }
   }
 
@@ -338,7 +289,7 @@
     padding-right: 0.5em;
     color: #000000;
     font-weight: bold;
-    background: $primary-color;
+    background: #ffffff;
     border-radius: $border-radius;
 
     &:hover {
@@ -353,6 +304,7 @@
   font-family: $sans-serif-narrow;
   font-size: $type-size-5;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .nav__sub-title {
@@ -363,28 +315,25 @@
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
 }
 
-
-/*
-   Table of contents navigation
-   ========================================================================== */
-
+/* Table of contents navigation */
 .toc {
   font-family: $sans-serif-narrow;
-  color: $gray;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: #000000;
-  border: 1px solid $border-color;
+  border: 1px solid #ffffff;
   border-radius: $border-radius;
   box-shadow: $box-shadow;
 
   .nav__title {
     color: #000000;
     font-size: $type-size-6;
-    background: $primary-color;
+    background: #ffffff;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -400,16 +349,16 @@
   a {
     display: block;
     padding: 0.5rem 1rem;
-    color: $gray;
+    color: #ffffff;
     font-size: $type-size-7;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid #ffffff;
     text-decoration-line: none !important;
 
     &:hover {
-      color: #000;
-      background: $lighter-gray;
+      color: #ffffff;
+      background: #333333;
     }
   }
 
@@ -422,6 +371,7 @@
   li ul > li a {
     padding-left: 2rem;
     font-weight: normal;
+    color: #ffffff;
   }
 
   /* hide sub sub links on small screens*/
