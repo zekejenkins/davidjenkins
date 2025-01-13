@@ -83,7 +83,7 @@
       line-height: 1.5;
       text-align: center;
       text-decoration: none;
-      color: $text-color;
+      color: #fff;
       border: 1px solid $light-gray;
       border-radius: 0;
 
@@ -97,7 +97,7 @@
       }
 
       &.disabled {
-        color: mix(#000, $gray, 75%);
+        color: #fff;
         pointer-events: none;
         cursor: not-allowed;
       }
@@ -131,7 +131,7 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: mix(#000, $gray, 50%);
+    color: #fff;
     border: 1px solid $light-gray;
     border-radius: $border-radius;
 
