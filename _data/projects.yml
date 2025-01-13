@@ -2,6 +2,7 @@
   description: "Analyze social media marketing data using Python."
   skills:
     - Python
+    - Visualization
   url: "/davidjenkins/projects/social_media_marketing/"
   
 - title: "Trello Card Creator"
