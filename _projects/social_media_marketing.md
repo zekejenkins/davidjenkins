@@ -35,6 +35,6 @@ By completing this analysis, I was able to:
 - **Standard Error**: 1.66 (low residual error).
 
 ### Total Ad Spend vs. Sales:
-<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/figure_1.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/Figure_1.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ## 
