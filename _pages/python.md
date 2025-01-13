@@ -20,4 +20,4 @@ Here are the projects where I used Python:
       </div>
     {% endif %}
   {% endfor %}
-</div>
+</div> 
