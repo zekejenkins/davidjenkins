@@ -66,12 +66,19 @@
   background-color: #ffffff;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  color: #cf98bb; /* Change text color on hover */
 }
 
 .tile img {
   max-width: 100px;
   margin-bottom: 10px;
-  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+/* Apply icon color change on hover */
+.tile:hover img {
+  filter: none; /* Reset any filter applied */
+  color: #cf98bb; /* Update icon color to match */
 }
 
 .skills-grid img {
@@ -79,7 +86,8 @@
 }
 
 .skills-grid img:hover {
-  filter: invert(1) sepia(1) hue-rotate(300deg) saturate(5) brightness(1.2); /* Invert and apply #cf98bb tint */
+  filter: invert(1) sepia(1) hue-rotate(300deg) saturate(5) brightness(1.2); /* Add hover tint effect */
+  color: #cf98bb; /* Ensure hover color matches */
 }
 
 /* Global Dark Mode */
