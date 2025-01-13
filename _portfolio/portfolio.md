@@ -1,4 +1,3 @@
-
 ---
 layout: single
 title: "Portfolio"
@@ -12,9 +11,7 @@ author_profile: true
       <div class="tile-icon">
         {% for skill in project.skills %}
         {% assign skill_info = site.data.skills | where: "skill", skill | first %}
-        {% if skill_info and skill_info.icons.small %}
         <img src="{{ skill_info.icons.small }}" alt="{{ skill }}" style="filter: invert(1);">
-        {% endif %}
         {% endfor %}
       </div>
       <div class="tile-content">
