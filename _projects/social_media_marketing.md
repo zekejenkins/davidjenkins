@@ -78,13 +78,13 @@ The dataset is available on [GitHub](https://github.com/zekejenkins/davidjenkins
 ## Visualizations
 
 ### Ad Spend Distribution
-<img src="https://github.com/zekejenkins/davidjenkins/blob/master/images/ad_spend.png" alt="Ad Spend Distribution" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/ad_spend.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ### Correlation Matrix
-<img src="https://github.com/zekejenkins/davidjenkins/blob/master/images/Figure_1.png" alt="Correlation Matrix" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/Figure_1.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ### Residual Distribution
-<img src="https://github.com/zekejenkins/davidjenkins/blob/master/images/residual_distribution.png" alt="Residual Distribution" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/residual_distribution.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ## Recommendations
 
