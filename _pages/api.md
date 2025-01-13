@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "API Projects"
-permalink: /skills/API/
+permalink: /skills/api/
 author_profile: true
 ---
 
