@@ -8,7 +8,6 @@
   description: "A Google Apps Script project to automate creating Trello cards from spreadsheet data."
   skills:
     - JavaScript
-    - Google Apps Script
     - API
   url: "/davidjenkins/projects/trello_card_creator/"
 
@@ -47,10 +46,7 @@
   description: "Automated process for extracting financial data from over 36,000 PDF account statements and consolidating it into Excel for advanced analysis."
   skills:
     - Python
-    - PyMuPDF (fitz)
-    - pandas
     - Excel
-    - Regular Expressions (Regex)
   url: "/davidjenkins/projects/pdf_data_extraction/"
 
   
