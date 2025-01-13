@@ -9,7 +9,7 @@ author_profile: true
 
 This project analyzes the performance of a marketing campaign using a dataset with advertising spend, impressions, clicks, conversions, and other campaign-specific features. The analysis evaluates the factors influencing Click-Through Rate (CTR) through regression modeling and provides actionable insights to improve campaign effectiveness.
 
-The dataset is available on [GitHub](https://github.com/zekejenkins/davidjenkins). By completing this analysis, I achieved the following:
+The dataset is available on [GitHub]([https://github.com/zekejenkins/davidjenkins](https://github.com/zekejenkins/davidjenkins/blob/master/files/Marketing%20Data.csv)). By completing this analysis, I achieved the following:
 
 - Identified significant predictors of CTR.
 - Quantified the relationship between ad spend, impressions, and clicks with CTR.
