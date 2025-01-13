@@ -5,13 +5,6 @@ permalink: /projects/social_media_marketing/
 author_profile: true
 ---
 
----
-layout: single
-title: "Marketing Campaign Analysis"
-permalink: /projects/social_media_marketing/
-author_profile: true
----
-
 ## Overview
 
 In this project, I conducted an in-depth analysis of a multi-platform marketing campaign to uncover the key factors driving Click-Through Rate (CTR) and campaign performance. Using a dataset containing advertising spend, impressions, clicks, conversions, and campaign-specific attributes, I employed advanced regression modeling and exploratory data analysis to derive actionable insights.
