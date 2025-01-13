@@ -323,6 +323,8 @@ except Exception as e:
     print(f"Error exporting results: {e}")
 ```
 ## Visualization and insights generation
+### Python Dashboard
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/Dashboard.png" alt="Dashboard" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
 
 ### Ad Spend Distribution
 <img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/ad_spend.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
