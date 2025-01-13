@@ -34,4 +34,7 @@ By completing this analysis, I was able to:
 - **Adjusted R²**: 0.9011 (adjusted for predictors).
 - **Standard Error**: 1.66 (low residual error).
 
-### **Summary Output**
+### Total Ad Spend vs. Sales:
+<img src="https://raw.githubusercontent.com/zekejenkins/davidjenkins/master/images/figure_1.png" alt="Scatterplot of Total Ad Spend vs. Sales" style="filter: invert(1); transition: filter 0.3s ease;" class="invert-on-dark"/>
+
+## 
