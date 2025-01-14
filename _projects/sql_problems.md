@@ -6,6 +6,7 @@ author_profile: true
 ---
 
 This project showcases various SQL projects that I have worked on, obtained from different data analyst assessments. The questions test your ability to perform complex SQL queries, including cumulative percentages, rolling averages, and filtering data. Below are the questions along with sample data tables to practice.
+
 ---
 
 ## 1. Calculate a Cumulative Percentage of Total Sales by Region
