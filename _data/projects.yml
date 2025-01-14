@@ -43,11 +43,10 @@
     - Excel
   url: "/davidjenkins/projects/superstore_analysis/"
   
-- title: "Automated PDF Data Extraction and Analysis"
-  description: "Automated process for extracting financial data from over 36,000 PDF account statements and consolidating it into Excel for advanced analysis."
+- title: "SQL Project Portfolio"
+  description: "Various SQL projects from different data analyst assessments, showcasing skills in cumulative percentage calculations, rolling averages, ranking, and more."
   skills:
-    - Python
-    - Excel
-  url: "/davidjenkins/projects/pdf_data_extraction/"
+    - SQL
+    - Data Analysis
+  url: "/davidjenkins/projects/sql_questions/"
 
-  
