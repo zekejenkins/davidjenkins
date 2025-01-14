@@ -49,7 +49,7 @@
     - SQL
   url: "/davidjenkins/projects/sql_questions/"
 
-- title: "Python DataFrame Projects"
+- title: "Python Projects"
   description: "Various Python problems from different data analyst assessments, showcasing skills in pandas operations like filtering, renaming, handling missing values, and adding columns."
   skills:
     - Python
