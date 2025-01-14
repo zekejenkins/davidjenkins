@@ -21,13 +21,6 @@
     border-bottom: 1px solid #444; /* Adjust the border for contrast */
   }
 
-  /* Light mode styles (default) */
-  @media (prefers-color-scheme: light) {
-    background: white;
-    color: black;
-    border-bottom: 1px solid $border-color;
-  }
-
   &__inner-wrap {
     @include container;
     @include clearfix;
