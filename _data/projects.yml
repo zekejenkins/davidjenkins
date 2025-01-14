@@ -53,7 +53,6 @@
   description: "Various Python problems from different data analyst assessments, showcasing skills in pandas operations like filtering, renaming, handling missing values, and adding columns."
   skills:
     - Python
-    - pandas
   url: "/davidjenkins/projects/python_questions/"
 
 
