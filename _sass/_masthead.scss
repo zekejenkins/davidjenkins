@@ -8,24 +8,21 @@
   top: 0;
   width: 100%;
   z-index: 20;
+  background: black; /* Ensure masthead background is black */
+  color: white;
+  border-bottom: 1px solid #444; /* Adjust the border for contrast */
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
 
-  /* Dark mode styles */
-  @media (prefers-color-scheme: dark) {
-    background: black;
-    color: white;
-    border-bottom: 1px solid #444; /* Adjust the border for contrast */
-  }
-
   &__inner-wrap {
     @include container;
     @include clearfix;
     padding: 1em 1em 1em;
     font-family: $sans-serif-narrow;
+    background: black; /* Ensure inner wrap background is black */
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -33,15 +30,18 @@
 
     nav {
       z-index: 10;
+      background: black; /* Ensure nav background is black */
     }
 
     a {
       text-decoration: none;
+      color: white; /* Ensure links are white */
     }
   }
 }
 
 .masthead__menu {
+  background: black; /* Ensure menu background is black */
 
   ul {
     margin: 0;
