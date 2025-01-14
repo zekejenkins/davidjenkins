@@ -43,9 +43,17 @@
     - Excel
   url: "/davidjenkins/projects/superstore_analysis/"
   
-- title: "SQL Project Portfolio"
+- title: "SQL Projects"
   description: "Various SQL projects from different data analyst assessments, showcasing skills in cumulative percentage calculations, rolling averages, ranking, and more."
   skills:
     - SQL
   url: "/davidjenkins/projects/sql_questions/"
+
+- title: "Python DataFrame Projects"
+  description: "Various Python problems from different data analyst assessments, showcasing skills in pandas operations like filtering, renaming, handling missing values, and adding columns."
+  skills:
+    - Python
+    - pandas
+  url: "/davidjenkins/projects/python_questions/"
+
 
