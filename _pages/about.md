@@ -1,14 +1,12 @@
 ---
 layout: single
 permalink: /
-title: "David Jenkins"
+title: "Welcome to My Data Analytics Portfolio!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-# Welcome to My Data Analytics Portfolio!
-
 ## What I'm Currently Doing
 I’m David Jenkins, a dynamic professional combining expertise in data analytics, process improvement, and storytelling. In my current role as Assistant Director of Administrative Program Support at the University of Notre Dame, I focus on analyzing and enhancing processes within the financial aid office. Using tools like SAP Business Objects, PL/SQL, PowerQuery, Tableau, and Microsoft Excel, I create dashboards and reports that transform data into actionable insights.
 
