@@ -1,4 +1,5 @@
 ---
+layout: single
 permalink: /
 title: "David Jenkins"
 author_profile: true
